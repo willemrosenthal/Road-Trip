@@ -17,11 +17,9 @@ class Car extends FlxSprite
     var impactSpeed:Float = 0;
     var impactPower:Float = 0.3;
     var impactDecay:Float = 0.7;
-    public var pullAway:Float = 0;
-    var pullAwayDecay:Float = 0.7;
 
 
-    public var weight:Float = 10;
+    public var weight:Float = 50;
 
     //public var health:Float = 100;
 
@@ -40,13 +38,6 @@ class Car extends FlxSprite
                 impactSpeed = 0;
         }
 
-        if (pullAway != 0) {
-            xSpeed += pullAway * (1 - pullAwayDecay);
-            pullAway *= pullAwayDecay;
-            if (Math.abs(pullAway) < 0.005)
-                pullAway = 0;
-        }
-
 
         x += xSpeed;
         y += ySpeed;
@@ -58,7 +49,7 @@ class Car extends FlxSprite
         angle = (xSpeed/xMax * 40);
     }
 
-    public function impact(xImpactSpeed:Float, power):Void {
+    public function impact(xImpactSpeed:Float, power = 0.3, damage:Bool = false):Void {
         impactSpeed += xImpactSpeed;
         impactPower = power;
     }

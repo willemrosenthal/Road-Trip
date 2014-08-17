@@ -70,33 +70,46 @@ class PlayState extends FlxState
     function sideCollitons(c1:Car, c2:Car):Void {
         var c1Power:Float = Math.abs(c1.xSpeed) + c1.weight * 0.1;
         var c2Power:Float = Math.abs(c2.xSpeed) + c2.weight * 0.1;
-        if (Math.abs(Math.abs(c1.xSpeed) - Math.abs(c2.xSpeed)) > minImpact) {
+        var hitSpeed:Float;
+
+        // side swipe
+        if (Math.abs(Math.abs(c1.xSpeed) - Math.abs(c1.ySpeed)) > minImpact) {
             if (c1Power > c2Power)  {
-                trace(getImpactPower(c1Power,c2Power));
-                c2.impact(c1.xSpeed * 2, getImpactPower(c1Power,c2Power));
+
+                if (Math.abs(c1.xSpeed) > Math.abs(c2.xSpeed))
+                    hitSpeed = c1.xSpeed;
+                else hitSpeed = c2.xSpeed * -0.35;
+
+                c2.impact(hitSpeed * 2, getImpactPower(c1Power,c2Power), true);
                 c1.xSpeed *= 0.5;
-                c1.pullAway = c1.xSpeed * -1.75;
+                c1.impact(c1.xSpeed * -1.75, 0.27);
             }
             else if (c1Power < c2Power)  {
-                c1.impact(c2.xSpeed * 2, getImpactPower(c1Power,c2Power));
+
+                if (Math.abs(c2.xSpeed) > Math.abs(c1.xSpeed))
+                    hitSpeed = c2.xSpeed;
+                else hitSpeed = c1.xSpeed * -0.35;
+
+                c1.impact(hitSpeed * 2, getImpactPower(c1Power,c2Power), true);
                 c2.xSpeed *= 0.5;
-                c2.pullAway = c2.xSpeed * -1.75;
+                c2.impact(c2.xSpeed * -1.75, 0.27);
             }
         }
+        // brusing
         else {
-            if (c1Power > c2Power) {
+            if (Math.abs(c1.xSpeed) > Math.abs(c2.xSpeed)) {
                 c2.xSpeed += c1.xSpeed * 0.1;
-                c1.xSpeed *= 0.9; // slows both down
+                c1.xSpeed *= 0.9 - getImpactPower(c1Power,c2Power); // slows both down
             }
-            else if (c1Power < c2Power) {
+            else if (Math.abs(c1.xSpeed) < Math.abs(c2.xSpeed)) {
                 c1.xSpeed += c2.xSpeed * 0.1;
-                c2.xSpeed *= 0.9; // slows both down
+                c2.xSpeed *= 0.9 - getImpactPower(c1Power,c2Power); // slows both down
             }
         }
     }
 
-    function getImpactPower(bigger:Float, smaller:Float):Float {
-        return Math.abs(bigger - smaller) * 0.11;
+    function getImpactPower(c1:Float, c2:Float):Float {
+        return Math.abs(c1 - c2) * 0.11;
     }
 
 }

@@ -17,7 +17,7 @@ class Player extends Car
         super.update();
 
 
-        if (pullAway == 0) {
+        if (impactSpeed == 0) {
             if (FlxG.keys.pressed.RIGHT)
                 xSpeed += xChange;
             if (FlxG.keys.pressed.LEFT)
