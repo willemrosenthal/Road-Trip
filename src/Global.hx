@@ -1,10 +1,13 @@
 package ;
+import flixel.FlxG;
 import flixel.util.FlxPoint;
 import flixel.group.FlxGroup;
 
 class Global {
 
-	static public var speed:Float = 100;
+	static public var speed:Float = 20;
     static public var player:Player;
+
+    static public var numbers:FlxGroup;
 
 }

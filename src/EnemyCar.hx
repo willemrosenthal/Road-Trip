@@ -36,6 +36,7 @@ class EnemyCar extends Car
         yMax = 3;
 
         weight = 10;
+        health = 50;
     }
 
     override public function update():Void {

@@ -12,6 +12,8 @@ class Player extends Car
 
         weight = 10;
         swipeCooldown = -40;
+        health = 100;
+        swipeAttackDamage = 10;
     }
 
     override public function update():Void {
@@ -33,6 +35,9 @@ class Player extends Car
             startSwipeAttack(-1);
         if (FlxG.keys.justPressed.X)
             startSwipeAttack(1);
+
+        if (swipe == 0 && swipeTimer < 0)
+            xSpeed *= 0.96;
     }
 
 }

@@ -18,6 +18,10 @@ class PlayState extends FlxState
     var e:EnemyCar;
 
     var cars:FlxGroup;
+    var numbers:FlxGroup;
+
+    var carTimer:Int = 0;
+    var carTime:Int =  600;
 	/**
 	 * Function that is called up when to state is created to set it up. 
 	 */
@@ -27,6 +31,10 @@ class PlayState extends FlxState
 
         cars = new FlxGroup();
         add(cars);
+
+        numbers = new FlxGroup();
+        Global.numbers = numbers;
+        add(numbers);
 
         player = new Player(50,50);
         cars.add(player);
@@ -51,7 +59,17 @@ class PlayState extends FlxState
 	{
 		super.update();
         FlxG.collide(cars,cars, carCollide);
+
+        carTimer++;
+        if (carTimer > carTime)
+            newCarAttack();
 	}
+
+    function newCarAttack():Void {
+        e = new EnemyCar(-100 + Math.random() * (FlxG.width + 200),FlxG.height + 100);
+        cars.add(e);
+        carTimer = 0;
+    }
 
     var minImpact:Float = 2;
     private function carCollide(Obj1:FlxSprite,Obj2:FlxSprite):Void {
@@ -80,7 +98,7 @@ class PlayState extends FlxState
                     hitSpeed = c1.xSpeed;
                 else hitSpeed = c2.xSpeed * -0.35;
 
-                c2.impact(hitSpeed * 2, getImpactPower(c1Power,c2Power), true);
+                c2.impact(hitSpeed * 2, getImpactPower(c1Power,c2Power), true, c1.swipeAttackDamage);
                 c1.xSpeed *= 0.5;
                 c1.impact(c1.xSpeed * -1.75, 0.27);
                 c1.endSwipeAttack();
@@ -92,7 +110,7 @@ class PlayState extends FlxState
                     hitSpeed = c2.xSpeed;
                 else hitSpeed = c1.xSpeed * -0.35;
 
-                c1.impact(hitSpeed * 2, getImpactPower(c1Power,c2Power), true);
+                c1.impact(hitSpeed * 2, getImpactPower(c1Power,c2Power), true, c2.swipeAttackDamage);
                 c2.xSpeed *= 0.5;
                 c2.impact(c2.xSpeed * -1.75, 0.27);
                 c1.endSwipeAttack();
