@@ -33,14 +33,6 @@ class PlayState extends FlxState
 
         e = new EnemyCar(100,FlxG.height + 100);
         cars.add(e);
-
-
-        e = new EnemyCar(150,FlxG.height + 300);
-        cars.add(e);
-
-
-        e = new EnemyCar(200,FlxG.height + 100);
-        cars.add(e);
 	}
 	
 	/**
@@ -60,8 +52,51 @@ class PlayState extends FlxState
 		super.update();
         FlxG.collide(cars,cars, carCollide);
 	}
+
+    var minImpact:Float = 2;
     private function carCollide(Obj1:FlxSprite,Obj2:FlxSprite):Void {
         if (Obj1 == Obj2)
             return;
+        if (Std.is(Obj1, Car) && Std.is(Obj2, Car)) {
+            var c1:Car = cast(Obj1, Car);
+            var c2:Car = cast(Obj2, Car);
+
+            // if cars are next to eachother
+            if ((c1.y < c2.y && c1.y + c1.height > c2.y) || (c1.y > c2.y && c1.y < c2.y + c2.height))
+                sideCollitons(c1,c2);
+        }
     }
+
+    function sideCollitons(c1:Car, c2:Car):Void {
+        var c1Power:Float = Math.abs(c1.xSpeed) + c1.weight * 0.1;
+        var c2Power:Float = Math.abs(c2.xSpeed) + c2.weight * 0.1;
+        if (Math.abs(Math.abs(c1.xSpeed) - Math.abs(c2.xSpeed)) > minImpact) {
+            if (c1Power > c2Power)  {
+                trace(getImpactPower(c1Power,c2Power));
+                c2.impact(c1.xSpeed * 2, getImpactPower(c1Power,c2Power));
+                c1.xSpeed *= 0.5;
+                c1.pullAway = c1.xSpeed * -1.75;
+            }
+            else if (c1Power < c2Power)  {
+                c1.impact(c2.xSpeed * 2, getImpactPower(c1Power,c2Power));
+                c2.xSpeed *= 0.5;
+                c2.pullAway = c2.xSpeed * -1.75;
+            }
+        }
+        else {
+            if (c1Power > c2Power) {
+                c2.xSpeed += c1.xSpeed * 0.1;
+                c1.xSpeed *= 0.9; // slows both down
+            }
+            else if (c1Power < c2Power) {
+                c1.xSpeed += c2.xSpeed * 0.1;
+                c2.xSpeed *= 0.9; // slows both down
+            }
+        }
+    }
+
+    function getImpactPower(bigger:Float, smaller:Float):Float {
+        return Math.abs(bigger - smaller) * 0.11;
+    }
+
 }

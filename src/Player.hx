@@ -3,32 +3,30 @@ package ;
 import flixel.FlxG;
 import flixel.FlxSprite;
 
-class Player extends FlxSprite
+class Player extends Car
 {
-
-    var xSpeed:Float = 4;
-    var ySpeed:Float = 3;
-
     public function new(X:Float, Y:Float)
     {
         super(X, Y, 'assets/images/player.png');
         Global.player = this;
+
+        weight = 10;
     }
 
     override public function update():Void {
         super.update();
 
 
-        if (FlxG.keys.pressed.RIGHT)
-            x += xSpeed;
-        if (FlxG.keys.pressed.LEFT)
-            x -= xSpeed;
-        if (FlxG.keys.pressed.UP)
-            y -= ySpeed;
-        if (FlxG.keys.pressed.DOWN)
-            y += ySpeed;
-
+        if (pullAway == 0) {
+            if (FlxG.keys.pressed.RIGHT)
+                xSpeed += xChange;
+            if (FlxG.keys.pressed.LEFT)
+                xSpeed -= xChange;
+            if (FlxG.keys.pressed.DOWN)
+                ySpeed += xChange;
+            if (FlxG.keys.pressed.UP)
+                ySpeed -= xChange;
+        }
     }
-
 
 }

@@ -5,18 +5,10 @@ import flixel.util.FlxPoint;
 import flixel.FlxG;
 import flixel.FlxSprite;
 
-class EnemyCar extends FlxSprite
+class EnemyCar extends Car
 {
 
     var maxGasDistance:Float = 200;
-
-    var xSpeed:Float = 0;
-    var xChange:Float = 0.05;
-    var xMax:Float = 3;
-
-    var ySpeed:Float = 0;
-    var yChange:Float = 0.05;
-    var yMax:Float = 3;
 
     var destination:FlxPoint;
     var destinationBreakRange:Float = 50; //  when to break = destinationBreakRange * speed
@@ -35,35 +27,27 @@ class EnemyCar extends FlxSprite
         super(X, Y, 'assets/images/e1.png');
         destination = startingDestination();
         updateDestinationTimer = Math.floor(updateDestinationTime * Math.random());
+
+        xChange = 0.05;
+        xChangeNormal = 0.05;
+        xMax = 3;
+        yChange = 0.05;
+        yChangeNormal = 0.05;
+        yMax = 3;
+
+        weight = 10;
     }
 
     override public function update():Void {
         super.update();
-
-        /*
-        if (offscreen)
-            enterScreen();
-        offScreen();
-        */
 
         stayNextToCar();
 
         if (destination != null) {
             gotoDesination();
             breakForDestination();
-            //reachedDestination();
         }
-
         stayWithinMaxSpeed();
-        x += xSpeed;
-        y += ySpeed;
-        rotateCar();
-
-        //trace(breaking);
-    }
-
-    function rotateCar():Void {
-        angle = (xSpeed/xMax * 40);
     }
 
     var carDistance:Float = 50;
@@ -78,26 +62,6 @@ class EnemyCar extends FlxSprite
         }
     }
 
-
-    function enterScreen():Void {
-        if (x < FlxG.width * 0.5)
-            xSpeed += xChange;
-        if (x > FlxG.width * 0.5)
-            xSpeed -= xChange;
-        if (y < FlxG.height * 0.5)
-            ySpeed += yChange;
-        if (y > FlxG.height * 0.5)
-            ySpeed -= yChange;
-
-        if (x < FlxG.width - onScreenRange && x > onScreenRange && y > onScreenRange && y < FlxG.height - onScreenRange)
-            offscreen = false;
-    }
-
-
-    function offScreen():Void {
-        if (x > FlxG.width || x < 0 || y < 0 || y > FlxG.height)
-            offscreen = true;
-    }
 
     function stayWithinMaxSpeed():Void {
         if (xSpeed > xMax)
