@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Flixel 3,3,5" type="Haxe">
+    <CLASSES>
+      <root url="file:///usr/lib/haxe/lib/flixel/3,3,5" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
