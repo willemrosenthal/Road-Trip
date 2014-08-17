@@ -83,6 +83,8 @@ class PlayState extends FlxState
                 c2.impact(hitSpeed * 2, getImpactPower(c1Power,c2Power), true);
                 c1.xSpeed *= 0.5;
                 c1.impact(c1.xSpeed * -1.75, 0.27);
+                c1.endSwipeAttack();
+                c2.endSwipeAttack();
             }
             else if (c1Power < c2Power)  {
 
@@ -93,6 +95,8 @@ class PlayState extends FlxState
                 c1.impact(hitSpeed * 2, getImpactPower(c1Power,c2Power), true);
                 c2.xSpeed *= 0.5;
                 c2.impact(c2.xSpeed * -1.75, 0.27);
+                c1.endSwipeAttack();
+                c2.endSwipeAttack();
             }
         }
         // brusing
@@ -100,10 +104,14 @@ class PlayState extends FlxState
             if (Math.abs(c1.xSpeed) > Math.abs(c2.xSpeed)) {
                 c2.xSpeed += c1.xSpeed * 0.1;
                 c1.xSpeed *= 0.9 - getImpactPower(c1Power,c2Power); // slows both down
+                c1.endSwipeAttack();
+                c2.endSwipeAttack();
             }
             else if (Math.abs(c1.xSpeed) < Math.abs(c2.xSpeed)) {
                 c1.xSpeed += c2.xSpeed * 0.1;
                 c2.xSpeed *= 0.9 - getImpactPower(c1Power,c2Power); // slows both down
+                c1.endSwipeAttack();
+                c2.endSwipeAttack();
             }
         }
     }

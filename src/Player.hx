@@ -11,6 +11,7 @@ class Player extends Car
         Global.player = this;
 
         weight = 10;
+        swipeCooldown = -40;
     }
 
     override public function update():Void {
@@ -27,6 +28,11 @@ class Player extends Car
             if (FlxG.keys.pressed.UP)
                 ySpeed -= xChange;
         }
+
+        if (FlxG.keys.justPressed.Z)
+            startSwipeAttack(-1);
+        if (FlxG.keys.justPressed.X)
+            startSwipeAttack(1);
     }
 
 }

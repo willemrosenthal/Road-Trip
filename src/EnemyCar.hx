@@ -47,7 +47,6 @@ class EnemyCar extends Car
             gotoDesination();
             breakForDestination();
         }
-        stayWithinMaxSpeed();
     }
 
     var carDistance:Float = 50;
@@ -60,18 +59,6 @@ class EnemyCar extends Car
             else
                 destination = new FlxPoint(Global.player.x + carDistance, Global.player.y);
         }
-    }
-
-
-    function stayWithinMaxSpeed():Void {
-        if (xSpeed > xMax)
-        xSpeed = xMax;
-        if (xSpeed < xMax * -1)
-            xSpeed = xMax * -1;
-        if (ySpeed > yMax)
-            ySpeed = yMax;
-        if (ySpeed < yMax * -1)
-            ySpeed = yMax * -1;
     }
 
     function startingDestination():FlxPoint {
