@@ -33,7 +33,6 @@ class Player extends Car
     override public function update():Void {
         super.update();
 
-
         if (impactSpeed == 0) {
             if (FlxG.keys.pressed.RIGHT)
                 xSpeed += xChange;
@@ -48,17 +47,31 @@ class Player extends Car
                 var data = Accelerometer.get();
 
 
-                if (data.x > zeroPoint.x + deadzoneX)
-                    xSpeed += xChange;
-                else if (data.x < zeroPoint.x - deadzoneX)
-                    xSpeed -= xChange;
+                if (data.x > zeroPoint.x + deadzoneX) {
+                    if (data.x - zeroPoint.x + deadzoneX < deadzoneX * 2)
+                        xSpeed += (data.x - zeroPoint.x + deadzoneX)/(deadzoneX * 2) * xChange
+                    else xSpeed += xChange;
+                    }
+                else if (data.x < zeroPoint.x - deadzoneX) {
+                    if (data.x > zeroPoint.x - deadzoneX * 2)
+                        xSpeed -= (data.x - (zeroPoint.x - deadzoneX * 2))/(deadzoneX * 2) * xChange
+                    else xSpeed -= xChange;
+                    }
                 else breakX();
 
 
-                if (data.y > zeroPoint.y + deadzoneY)
-                    ySpeed -= yChange;
-                else if (data.y < zeroPoint.y - deadzoneY)
-                    ySpeed += yChange;
+                if (data.y > zeroPoint.y + deadzoneY)  {
+                    if (data.y - zeroPoint.y + deadzoneY < deadzoneY * 2)
+                        ySpeed += (data.y - zeroPoint.y + deadzoneY)/(deadzoneY * 2) * yChange
+                    else ySpeed -= yChange;
+                    }
+
+                else if (data.y < zeroPoint.y - deadzoneY) {
+                    if (data.y > zeroPoint.y - deadzoneY * 2)
+                        ySpeed += (data.y - (zeroPoint.y - deadzoneY * 2))/(deadzoneY * 2) * yChange
+                    else ySpeed += yChange;
+                    }
+
                 else breakY();
 
                 Global.txt.text = Std.string(data.y) + " " + Std.string(zeroPoint.y);

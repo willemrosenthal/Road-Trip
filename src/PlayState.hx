@@ -35,8 +35,8 @@ class PlayState extends FlxState
 		super.create();
 
         FlxG.worldBounds.width *= 1.2;
-        FlxG.worldBounds.x -= FlxG.width * 0.1;
         FlxG.camera.bounds = FlxG.worldBounds;
+        trace(FlxG.worldBounds.x);
 
         street = new FlxGroup();
         add(street);
@@ -54,15 +54,34 @@ class PlayState extends FlxState
         player = new Player(50,50);
         cars.add(player);
 
-        e = new EnemyCar(100,FlxG.height + 100);
-        cars.add(e);
+        //e = new EnemyCar(100,FlxG.height + 100);
+        //cars.add(e);
 
-        makeLines();
+        makeRoad();
         //FlxG.camera.follow(player, 2, 1.3);
 
         makeHud();
 
 	}
+
+    function makeRoad():Void {
+        var images:Array<String> = ['assets/images/road/dirt.png'];
+        var dirt = new Parallax(FlxG.worldBounds.width * 0.5, 0, images, 300, 50, true, true);
+        dirt.speed = Global.speed;
+        street.add(dirt);
+
+        var images:Array<String> = ['assets/images/road/road0.png','assets/images/road/road1.png','assets/images/road/road2.png'];
+        var road = new Parallax(FlxG.worldBounds.width * 0.5, 0, images, 210, 151, true, true);
+        road.speed = Global.speed;
+        street.add(road);
+
+        var images:Array<String> = ['assets/images/road/line0.png','assets/images/road/line1.png','assets/images/road/line2.png','assets/images/road/line3.png'];
+        var roadLines = new Parallax(FlxG.worldBounds.width * 0.5, 0, images, 4, 151, true, true);
+        roadLines.speed = Global.speed;
+        street.add(roadLines);
+
+        trace(FlxG.worldBounds.width);
+    }
 
     function makeHud():Void {
         var txt = new FlxText(0, 2, 0, "debug");
@@ -102,7 +121,7 @@ class PlayState extends FlxState
 
     function newCarAttack():Void {
         e = new EnemyCar(-100 + Math.random() * (FlxG.width + 200),FlxG.height + 100);
-        cars.add(e);
+        //cars.add(e);
         carTimer = 0;
     }
 

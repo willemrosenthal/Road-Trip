@@ -96,6 +96,8 @@ class Car extends FlxSprite
         }
         else angle = (xSpeed/xMax * 30);
 
+
+
         if (angle > 30)
             angle = 30;
         if (angle < -30)
@@ -168,10 +170,21 @@ class Car extends FlxSprite
 
 
     function stayWithinMaxSpeed():Void {
+        if (xSpeed > xMax)
+            xSpeed = xMax;
+        if (xSpeed < xMax * -1)
+            xSpeed = xMax * -1;
+
+        if (ySpeed > yMax)
+            ySpeed = yMax;
+        if (ySpeed < yMax * -1)
+            ySpeed = yMax * -1;
+        /*
         if (Math.abs(xSpeed) > xMax)
             xSpeed *= 0.8;
         if (Math.abs(ySpeed) > yMax)
             ySpeed *= 0.8;
+        */
     }
 
     public function getMiddle():FlxPoint {

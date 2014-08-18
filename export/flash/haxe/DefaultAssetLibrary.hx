@@ -50,6 +50,22 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/line.png", Reflect.field (AssetType, "image".toUpperCase ()));
 		className.set ("assets/images/player.png", __ASSET__assets_images_player_png);
 		type.set ("assets/images/player.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		className.set ("assets/images/road/dirt.png", __ASSET__assets_images_road_dirt_png);
+		type.set ("assets/images/road/dirt.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		className.set ("assets/images/road/line0.png", __ASSET__assets_images_road_line0_png);
+		type.set ("assets/images/road/line0.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		className.set ("assets/images/road/line1.png", __ASSET__assets_images_road_line1_png);
+		type.set ("assets/images/road/line1.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		className.set ("assets/images/road/line2.png", __ASSET__assets_images_road_line2_png);
+		type.set ("assets/images/road/line2.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		className.set ("assets/images/road/line3.png", __ASSET__assets_images_road_line3_png);
+		type.set ("assets/images/road/line3.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		className.set ("assets/images/road/road0.png", __ASSET__assets_images_road_road0_png);
+		type.set ("assets/images/road/road0.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		className.set ("assets/images/road/road1.png", __ASSET__assets_images_road_road1_png);
+		type.set ("assets/images/road/road1.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		className.set ("assets/images/road/road2.png", __ASSET__assets_images_road_road2_png);
+		type.set ("assets/images/road/road2.png", Reflect.field (AssetType, "image".toUpperCase ()));
 		className.set ("assets/music/music-goes-here.txt", __ASSET__assets_music_music_goes_here_txt);
 		type.set ("assets/music/music-goes-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
 		className.set ("assets/sounds/sounds-go-here.txt", __ASSET__assets_sounds_sounds_go_here_txt);
@@ -69,6 +85,14 @@ class DefaultAssetLibrary extends AssetLibrary {
 		addExternal("assets/images/images-go-here.txt", "text", "assets/images/images-go-here.txt");
 		addExternal("assets/images/line.png", "image", "assets/images/line.png");
 		addExternal("assets/images/player.png", "image", "assets/images/player.png");
+		addExternal("assets/images/road/dirt.png", "image", "assets/images/road/dirt.png");
+		addExternal("assets/images/road/line0.png", "image", "assets/images/road/line0.png");
+		addExternal("assets/images/road/line1.png", "image", "assets/images/road/line1.png");
+		addExternal("assets/images/road/line2.png", "image", "assets/images/road/line2.png");
+		addExternal("assets/images/road/line3.png", "image", "assets/images/road/line3.png");
+		addExternal("assets/images/road/road0.png", "image", "assets/images/road/road0.png");
+		addExternal("assets/images/road/road1.png", "image", "assets/images/road/road1.png");
+		addExternal("assets/images/road/road2.png", "image", "assets/images/road/road2.png");
 		addExternal("assets/music/music-goes-here.txt", "text", "assets/music/music-goes-here.txt");
 		addExternal("assets/sounds/sounds-go-here.txt", "text", "assets/sounds/sounds-go-here.txt");
 		addExternal("assets/sounds/beep.mp3", "music", "assets/sounds/beep.mp3");
@@ -101,6 +125,30 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/images/player.png", __ASSET__assets_images_player_png);
 		type.set ("assets/images/player.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		
+		className.set ("assets/images/road/dirt.png", __ASSET__assets_images_road_dirt_png);
+		type.set ("assets/images/road/dirt.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		
+		className.set ("assets/images/road/line0.png", __ASSET__assets_images_road_line0_png);
+		type.set ("assets/images/road/line0.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		
+		className.set ("assets/images/road/line1.png", __ASSET__assets_images_road_line1_png);
+		type.set ("assets/images/road/line1.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		
+		className.set ("assets/images/road/line2.png", __ASSET__assets_images_road_line2_png);
+		type.set ("assets/images/road/line2.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		
+		className.set ("assets/images/road/line3.png", __ASSET__assets_images_road_line3_png);
+		type.set ("assets/images/road/line3.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		
+		className.set ("assets/images/road/road0.png", __ASSET__assets_images_road_road0_png);
+		type.set ("assets/images/road/road0.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		
+		className.set ("assets/images/road/road1.png", __ASSET__assets_images_road_road1_png);
+		type.set ("assets/images/road/road1.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		
+		className.set ("assets/images/road/road2.png", __ASSET__assets_images_road_road2_png);
+		type.set ("assets/images/road/road2.png", Reflect.field (AssetType, "image".toUpperCase ()));
 		
 		className.set ("assets/music/music-goes-here.txt", __ASSET__assets_music_music_goes_here_txt);
 		type.set ("assets/music/music-goes-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
@@ -703,6 +751,14 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:keep class __ASSET__assets_images_images_go_here_txt extends flash.utils.ByteArray { }
 @:keep class __ASSET__assets_images_line_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__assets_images_player_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_road_dirt_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_road_line0_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_road_line1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_road_line2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_road_line3_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_road_road0_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_road_road1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_road_road2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__assets_music_music_goes_here_txt extends flash.utils.ByteArray { }
 @:keep class __ASSET__assets_sounds_sounds_go_here_txt extends flash.utils.ByteArray { }
 @:keep class __ASSET__assets_sounds_beep_mp3 extends flash.media.Sound { }
@@ -710,6 +766,14 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 #elseif html5
+
+
+
+
+
+
+
+
 
 
 
@@ -734,6 +798,14 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:file("assets/images/images-go-here.txt") class __ASSET__assets_images_images_go_here_txt extends flash.utils.ByteArray {}
 @:bitmap("assets/images/line.png") class __ASSET__assets_images_line_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/player.png") class __ASSET__assets_images_player_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/road/dirt.png") class __ASSET__assets_images_road_dirt_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/road/line0.png") class __ASSET__assets_images_road_line0_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/road/line1.png") class __ASSET__assets_images_road_line1_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/road/line2.png") class __ASSET__assets_images_road_line2_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/road/line3.png") class __ASSET__assets_images_road_line3_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/road/road0.png") class __ASSET__assets_images_road_road0_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/road/road1.png") class __ASSET__assets_images_road_road1_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/road/road2.png") class __ASSET__assets_images_road_road2_png extends flash.display.BitmapData {}
 @:file("assets/music/music-goes-here.txt") class __ASSET__assets_music_music_goes_here_txt extends flash.utils.ByteArray {}
 @:file("assets/sounds/sounds-go-here.txt") class __ASSET__assets_sounds_sounds_go_here_txt extends flash.utils.ByteArray {}
 @:sound("/usr/lib/haxe/lib/flixel/3,3,5/assets/sounds/beep.mp3") class __ASSET__assets_sounds_beep_mp3 extends flash.media.Sound {}
