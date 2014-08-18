@@ -1,5 +1,7 @@
 package;
 
+import flixel.util.FlxPoint;
+import flixel.util.FlxColor;
 import flixel.group.FlxGroup;
 import flixel.FlxG;
 import flixel.FlxSprite;
@@ -7,6 +9,7 @@ import flixel.FlxState;
 import flixel.text.FlxText;
 import flixel.ui.FlxButton;
 import flixel.util.FlxMath;
+
 
 /**
  * A FlxState which can be used for the actual gameplay.
@@ -17,17 +20,26 @@ class PlayState extends FlxState
     var player:Player;
     var e:EnemyCar;
 
+    var street:FlxGroup;
     var cars:FlxGroup;
     var numbers:FlxGroup;
+    var hud:FlxGroup;
 
     var carTimer:Int = 0;
-    var carTime:Int =  600;
+    var carTime:Int =  800;
 	/**
 	 * Function that is called up when to state is created to set it up. 
 	 */
 	override public function create():Void
 	{
 		super.create();
+
+        FlxG.worldBounds.width *= 1.2;
+        FlxG.worldBounds.x -= FlxG.width * 0.1;
+        FlxG.camera.bounds = FlxG.worldBounds;
+
+        street = new FlxGroup();
+        add(street);
 
         cars = new FlxGroup();
         add(cars);
@@ -36,12 +48,35 @@ class PlayState extends FlxState
         Global.numbers = numbers;
         add(numbers);
 
+        hud = new FlxGroup();
+        add(hud);
+
         player = new Player(50,50);
         cars.add(player);
 
         e = new EnemyCar(100,FlxG.height + 100);
         cars.add(e);
+
+        makeLines();
+        //FlxG.camera.follow(player, 2, 1.3);
+
+        makeHud();
+
 	}
+
+    function makeHud():Void {
+        var txt = new FlxText(0, 2, 0, "debug");
+        Global.txt = txt;
+        txt.setFormat(null, 8, FlxColor.WHITE, "center", FlxText.BORDER_NONE, FlxColor.BLACK);
+        hud.add(txt);
+        hud.setAll("scrollFactor", new FlxPoint(0, 0));
+    }
+
+    function makeLines():Void {
+        for (i in 0...Math.round(FlxG.height/100)) {
+            street.add(new Line(FlxG.width * 0.5, i * 100));
+        }
+    }
 	
 	/**
 	 * Function that is called when this state is destroyed - you might want to 

@@ -36,6 +36,9 @@ class Car extends FlxSprite
     var deadX:Float = 0;
 
 
+    var breaking:Bool = false;
+
+
     public var weight:Float = 5;
     public var swipeAttackDamage:Float = 1;
 
@@ -84,9 +87,19 @@ class Car extends FlxSprite
     function rotateCar():Void {
         if (dead)
             angle = (deadX/xMax * 30);
-        else if (swipe != 0)
+        else if (swipe != 0) {
             angle = (swipeSpeed/xMax * 20);
+            if (angle > 20)
+                angle = 20;
+            if (angle < -20)
+                angle = -20;
+        }
         else angle = (xSpeed/xMax * 30);
+
+        if (angle > 30)
+            angle = 30;
+        if (angle < -30)
+            angle = -30;
     }
 
 
@@ -172,6 +185,19 @@ class Car extends FlxSprite
             destroy();
         if (x < 0 - width * 2)
             destroy();
+    }
+
+
+
+
+    // break
+    function breakX(breakPercent:Float = 0.95):Void {
+        xSpeed *= breakPercent;
+        breaking = true;
+    }
+    function breakY(breakPercent:Float = 0.95):Void {
+        ySpeed *= breakPercent;
+        breaking = true;
     }
 
 

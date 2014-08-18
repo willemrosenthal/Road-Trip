@@ -46,6 +46,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/e3.png", Reflect.field (AssetType, "image".toUpperCase ()));
 		className.set ("assets/images/images-go-here.txt", __ASSET__assets_images_images_go_here_txt);
 		type.set ("assets/images/images-go-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
+		className.set ("assets/images/line.png", __ASSET__assets_images_line_png);
+		type.set ("assets/images/line.png", Reflect.field (AssetType, "image".toUpperCase ()));
 		className.set ("assets/images/player.png", __ASSET__assets_images_player_png);
 		type.set ("assets/images/player.png", Reflect.field (AssetType, "image".toUpperCase ()));
 		className.set ("assets/music/music-goes-here.txt", __ASSET__assets_music_music_goes_here_txt);
@@ -65,6 +67,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 		addExternal("assets/images/e2.png", "image", "assets/images/e2.png");
 		addExternal("assets/images/e3.png", "image", "assets/images/e3.png");
 		addExternal("assets/images/images-go-here.txt", "text", "assets/images/images-go-here.txt");
+		addExternal("assets/images/line.png", "image", "assets/images/line.png");
 		addExternal("assets/images/player.png", "image", "assets/images/player.png");
 		addExternal("assets/music/music-goes-here.txt", "text", "assets/music/music-goes-here.txt");
 		addExternal("assets/sounds/sounds-go-here.txt", "text", "assets/sounds/sounds-go-here.txt");
@@ -92,6 +95,9 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/images/images-go-here.txt", __ASSET__assets_images_images_go_here_txt);
 		type.set ("assets/images/images-go-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
+		
+		className.set ("assets/images/line.png", __ASSET__assets_images_line_png);
+		type.set ("assets/images/line.png", Reflect.field (AssetType, "image".toUpperCase ()));
 		
 		className.set ("assets/images/player.png", __ASSET__assets_images_player_png);
 		type.set ("assets/images/player.png", Reflect.field (AssetType, "image".toUpperCase ()));
@@ -695,6 +701,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:keep class __ASSET__assets_images_e2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__assets_images_e3_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__assets_images_images_go_here_txt extends flash.utils.ByteArray { }
+@:keep class __ASSET__assets_images_line_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__assets_images_player_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__assets_music_music_goes_here_txt extends flash.utils.ByteArray { }
 @:keep class __ASSET__assets_sounds_sounds_go_here_txt extends flash.utils.ByteArray { }
@@ -716,6 +723,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
+
 #elseif (windows || mac || linux)
 
 
@@ -724,6 +732,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:bitmap("assets/images/e2.png") class __ASSET__assets_images_e2_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/e3.png") class __ASSET__assets_images_e3_png extends flash.display.BitmapData {}
 @:file("assets/images/images-go-here.txt") class __ASSET__assets_images_images_go_here_txt extends flash.utils.ByteArray {}
+@:bitmap("assets/images/line.png") class __ASSET__assets_images_line_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/player.png") class __ASSET__assets_images_player_png extends flash.display.BitmapData {}
 @:file("assets/music/music-goes-here.txt") class __ASSET__assets_music_music_goes_here_txt extends flash.utils.ByteArray {}
 @:file("assets/sounds/sounds-go-here.txt") class __ASSET__assets_sounds_sounds_go_here_txt extends flash.utils.ByteArray {}

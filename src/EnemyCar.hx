@@ -13,7 +13,6 @@ class EnemyCar extends Car
     var destination:FlxPoint;
     var destinationBreakRange:Float = 50; //  when to break = destinationBreakRange * speed
     var maxBreakDistance:Float = 200;
-    var breaking:Bool = false;
 
     var offscreen:Bool = true;
     var onScreenRange:Float =  50;
@@ -117,17 +116,6 @@ class EnemyCar extends Car
 
     function turnOffDestination():Void {
         destination = null;
-        breaking = true;
-    }
-
-
-    // break
-    function breakX(breakPercent:Float = 0.95):Void {
-        xSpeed *= breakPercent;
-        breaking = true;
-    }
-    function breakY(breakPercent:Float = 0.95):Void {
-        ySpeed *= breakPercent;
         breaking = true;
     }
 
