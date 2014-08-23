@@ -48,9 +48,11 @@ class PlayState extends FlxState
         add(street);
 
         shadows = new FlxGroup();
+        Global.shadows = shadows;
         add(shadows);
 
         cars = new FlxGroup();
+        Global.cars = cars;
         add(cars);
 
         numbers = new FlxGroup();
@@ -64,10 +66,11 @@ class PlayState extends FlxState
         player = new Player(50,50);
         cars.add(player);
 
-        shadows.add(new ShadowTest(50,57));
+        shadows.add(new ShadowTest(player));
 
         e = new EnemyCar(100,FlxG.height + 100);
-        //cars.add(e);
+        GroupControl.addCar(e);
+        GroupControl.addShadow(new ShadowTest(e));
 
         makeRoad();
         //FlxG.camera.follow(player, 2, 1.3);
@@ -83,11 +86,13 @@ class PlayState extends FlxState
         shadowCamera.bgColor = FlxColor.TRANSPARENT;
         shadowCamera.bounds = FlxG.worldBounds;
         FlxG.cameras.add(shadowCamera);
+        Global.shadowCam = shadowCamera;
 
         fgCamera = new FlxCamera();
         fgCamera.bgColor = FlxColor.TRANSPARENT;
         fgCamera.bounds = FlxG.worldBounds;
         FlxG.cameras.add(fgCamera);
+        Global.fgCam = fgCamera;
 
         shadows.setAll("cameras", [shadowCamera]);
 
@@ -160,7 +165,8 @@ class PlayState extends FlxState
 
     function newCarAttack():Void {
         e = new EnemyCar(-100 + Math.random() * (FlxG.width + 200),FlxG.height + 100);
-        //cars.add(e);
+        GroupControl.addCar(e);
+        GroupControl.addShadow(new ShadowTest(e));
         carTimer = 0;
     }
 

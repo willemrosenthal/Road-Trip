@@ -87,7 +87,7 @@
       <file leaf-file-name="Player.hx" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Player.hx">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="41" selection-start="945" selection-end="945" vertical-scroll-proportion="-2.6153846" vertical-offset="547" max-vertical-offset="1815">
+            <state line="50" column="45" selection-start="1191" selection-end="1191" vertical-scroll-proportion="-8.961538" vertical-offset="517" max-vertical-offset="1815">
               <folding />
             </state>
           </provider>
@@ -105,16 +105,7 @@
       <file leaf-file-name="ShadowTest.hx" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ShadowTest.hx">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="64" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlayState.hx" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/PlayState.hx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="30" selection-start="3091" selection-end="3091" vertical-scroll-proportion="0.30914825" vertical-offset="1303" max-vertical-offset="3585">
+            <state line="18" column="112" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
               <folding />
             </state>
           </provider>
@@ -129,6 +120,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="PlayState.hx" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/PlayState.hx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="167" column="39" selection-start="4655" selection-end="4655" vertical-scroll-proportion="0.8533123" vertical-offset="1423" max-vertical-offset="3675">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="CameraFrontEnd.hx" pinned="false" current="false" current-in-tab="false">
         <entry file="file:///usr/lib/haxe/lib/flixel/3,3,5/flixel/system/frontEnds/CameraFrontEnd.hx">
           <provider selected="true" editor-type-id="text-editor">
@@ -138,19 +138,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Car.hx" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Car.hx">
+      <file leaf-file-name="Global.hx" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Global.hx">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="44" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3330">
+            <state line="17" column="26" selection-start="368" selection-end="372" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Global.hx" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Global.hx">
+      <file leaf-file-name="GroupControl.hx" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GroupControl.hx">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="37" selection-start="167" selection-end="168" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="330">
+            <state line="9" column="58" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
               <folding />
             </state>
           </provider>
@@ -173,10 +173,11 @@
         <option value="$PROJECT_DIR$/src/EnemyCar.hx" />
         <option value="$PROJECT_DIR$/src/Car.hx" />
         <option value="$PROJECT_DIR$/src/Parallax.hx" />
-        <option value="$PROJECT_DIR$/src/Global.hx" />
         <option value="/usr/lib/haxe/lib/flixel/3,3,5/flixel/group/FlxGroup.hx" />
-        <option value="$PROJECT_DIR$/src/ShadowTest.hx" />
         <option value="$PROJECT_DIR$/src/Player.hx" />
+        <option value="$PROJECT_DIR$/src/Global.hx" />
+        <option value="$PROJECT_DIR$/src/ShadowTest.hx" />
+        <option value="$PROJECT_DIR$/src/GroupControl.hx" />
         <option value="$PROJECT_DIR$/src/PlayState.hx" />
       </list>
     </option>
@@ -491,13 +492,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/lib/haxe/lib/flixel/3,3,5/flixel/FlxObject.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="473" column="23" selection-start="16984" selection-end="16987" vertical-scroll-proportion="0.0" vertical-offset="6673" max-vertical-offset="16170">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Parallax.hx">
       <provider selected="true" editor-type-id="text-editor">
         <state line="130" column="42" selection-start="3213" selection-end="3213" vertical-scroll-proportion="0.0" vertical-offset="1257" max-vertical-offset="2115">
@@ -746,20 +740,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Global.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="37" selection-start="167" selection-end="168" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Car.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="44" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3330">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/lib/haxe/lib/flixel/3,3,5/flixel/text/FlxText.hx">
       <provider selected="true" editor-type-id="text-editor">
         <state line="228" column="36" selection-start="6462" selection-end="6469" vertical-scroll-proportion="0.0" vertical-offset="2998" max-vertical-offset="15225">
@@ -816,20 +796,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ShadowTest.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="64" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="41" selection-start="945" selection-end="945" vertical-scroll-proportion="-2.6153846" vertical-offset="547" max-vertical-offset="1815">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Parallax.hx">
       <provider selected="true" editor-type-id="text-editor">
         <state line="130" column="42" selection-start="3213" selection-end="3213" vertical-scroll-proportion="0.8724884" vertical-offset="821" max-vertical-offset="2115">
@@ -837,9 +803,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Car.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="27" selection-start="1728" selection-end="1738" vertical-scroll-proportion="-16.23077" vertical-offset="673" max-vertical-offset="3330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShadowTest.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="112" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Player.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="45" selection-start="1191" selection-end="1191" vertical-scroll-proportion="-8.961538" vertical-offset="517" max-vertical-offset="1815">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GroupControl.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="58" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Global.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="26" selection-start="368" selection-end="372" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/PlayState.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="30" selection-start="3091" selection-end="3091" vertical-scroll-proportion="0.30914825" vertical-offset="1303" max-vertical-offset="3585">
+        <state line="167" column="39" selection-start="4655" selection-end="4655" vertical-scroll-proportion="0.8533123" vertical-offset="1423" max-vertical-offset="3675">
           <folding />
         </state>
       </provider>

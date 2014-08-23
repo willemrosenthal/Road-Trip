@@ -11,19 +11,20 @@ class ShadowTest extends Car
     private var deadzoneY:Float = 0.08;
     private var zeroPoint:FlxPoint;
 
-    var player:Player;
+    var follow:Car;
 
-    public function new(X:Float, Y:Float)
+    public function new(Follow:Car)
     {
-        super(X, Y, 'assets/images/player.png');
+        follow = Follow;
+        super(follow.x, follow.y, 'assets/images/player.png');
         this.color = 0x000000;
     }
 
     override public function update():Void {
         super.update();
-        this.x = Global.player.x + Global.player.xSpeed;
-        this.y = Global.player.y + 7 + Global.player.ySpeed;
-        this.angle = Global.player.angle;
+        this.x = follow.x + follow.xSpeed;
+        this.y = follow.y + 7 + follow.ySpeed;
+        this.angle = follow.angle;
 
     }
 
