@@ -111,13 +111,6 @@ class Player extends Car
 
         if (swipe == 0 && swipeTimer < 0)
             xSpeed *= 0.96;
-
-        pointAtPlayer();
-    }
-
-    private function pointAtPlayer():Void {
-        FlxG.camera.scroll.x = x - FlxG.camera.width * 0.5;
-        //FlxG.camera.scroll.y = y - FlxG.camera.height * 0.5;
     }
 
 }

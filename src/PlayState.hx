@@ -1,5 +1,8 @@
 package;
 
+import flixel.FlxCamera;
+import flixel.util.FlxRect;
+import flixel.FlxCamera;
 import flixel.util.FlxPoint;
 import flixel.util.FlxColor;
 import flixel.group.FlxGroup;
@@ -20,7 +23,11 @@ class PlayState extends FlxState
     var player:Player;
     var e:EnemyCar;
 
+    var shadowCamera:FlxCamera;
+    var fgCamera:FlxCamera;
+
     var street:FlxGroup;
+    var shadows:FlxGroup;
     var cars:FlxGroup;
     var numbers:FlxGroup;
     var hud:FlxGroup;
@@ -36,10 +43,12 @@ class PlayState extends FlxState
 
         FlxG.worldBounds.width *= 1.2;
         FlxG.camera.bounds = FlxG.worldBounds;
-        trace(FlxG.worldBounds.x);
 
         street = new FlxGroup();
         add(street);
+
+        shadows = new FlxGroup();
+        add(shadows);
 
         cars = new FlxGroup();
         add(cars);
@@ -51,18 +60,42 @@ class PlayState extends FlxState
         hud = new FlxGroup();
         add(hud);
 
+
         player = new Player(50,50);
         cars.add(player);
 
-        //e = new EnemyCar(100,FlxG.height + 100);
+        shadows.add(new ShadowTest(50,57));
+
+        e = new EnemyCar(100,FlxG.height + 100);
         //cars.add(e);
 
         makeRoad();
         //FlxG.camera.follow(player, 2, 1.3);
 
+        setupCameras();
         makeHud();
 
 	}
+
+    function setupCameras():Void {
+        shadowCamera = new FlxCamera();
+        shadowCamera.alpha = 0.3;
+        shadowCamera.bgColor = FlxColor.TRANSPARENT;
+        shadowCamera.bounds = FlxG.worldBounds;
+        FlxG.cameras.add(shadowCamera);
+
+        fgCamera = new FlxCamera();
+        fgCamera.bgColor = FlxColor.TRANSPARENT;
+        fgCamera.bounds = FlxG.worldBounds;
+        FlxG.cameras.add(fgCamera);
+
+        shadows.setAll("cameras", [shadowCamera]);
+
+        cars.setAll("cameras", [fgCamera]);
+        street.setAll("cameras", [FlxG.camera]);
+        numbers.setAll("cameras", [FlxG.camera]);
+        hud.setAll("cameras", [FlxG.camera], true);
+    }
 
     function makeRoad():Void {
         var images:Array<String> = ['assets/images/road/dirt.png'];
@@ -79,8 +112,6 @@ class PlayState extends FlxState
         var roadLines = new Parallax(FlxG.worldBounds.width * 0.5, 0, images, 4, 151, true, true);
         roadLines.speed = Global.speed;
         street.add(roadLines);
-
-        trace(FlxG.worldBounds.width);
     }
 
     function makeHud():Void {
@@ -117,7 +148,15 @@ class PlayState extends FlxState
         carTimer++;
         if (carTimer > carTime)
             newCarAttack();
+
+        cameraControl();
 	}
+
+    function cameraControl():Void {
+        FlxG.camera.scroll.x = player.x - FlxG.camera.width * 0.5;
+        shadowCamera.scroll.x = player.x - shadowCamera.width * 0.5;
+        fgCamera.scroll.x = player.x - shadowCamera.width * 0.5;
+    }
 
     function newCarAttack():Void {
         e = new EnemyCar(-100 + Math.random() * (FlxG.width + 200),FlxG.height + 100);
