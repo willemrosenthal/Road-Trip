@@ -84,10 +84,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CarPart.hx" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="CarPart.hx" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CarPart.hx">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="163" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0" vertical-offset="147" max-vertical-offset="1005">
+            <state line="25" column="25" selection-start="600" selection-end="600" vertical-scroll-proportion="0.4055944" vertical-offset="27" max-vertical-offset="1005">
               <folding />
             </state>
           </provider>
@@ -102,19 +102,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Shadow.hx" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Shadow.hx" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Shadow.hx">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="55" selection-start="467" selection-end="467" vertical-scroll-proportion="0.2972028" vertical-offset="0" max-vertical-offset="858">
+            <state line="3" column="6" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayState.hx" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PlayState.hx">
+      <file leaf-file-name="EnemyCar.hx" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/EnemyCar.hx">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="101" selection-start="1412" selection-end="1412" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="3645">
+            <state line="33" column="28" selection-start="862" selection-end="862" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1950">
               <folding />
             </state>
           </provider>
@@ -169,7 +169,6 @@
         <option value="$PROJECT_DIR$/Project.xml" />
         <option value="$PROJECT_DIR$/src/BattleScore.hx" />
         <option value="$PROJECT_DIR$/src/Line.hx" />
-        <option value="$PROJECT_DIR$/src/EnemyCar.hx" />
         <option value="$PROJECT_DIR$/src/Parallax.hx" />
         <option value="/usr/lib/haxe/lib/flixel/3,3,5/flixel/group/FlxGroup.hx" />
         <option value="$PROJECT_DIR$/src/GroupControl.hx" />
@@ -184,9 +183,10 @@
         <option value="$PROJECT_DIR$/src/Calc.hx" />
         <option value="$PROJECT_DIR$/src/Player.hx" />
         <option value="$PROJECT_DIR$/src/ComplexCar.hx" />
-        <option value="$PROJECT_DIR$/src/CarPart.hx" />
-        <option value="$PROJECT_DIR$/src/PlayState.hx" />
         <option value="$PROJECT_DIR$/src/Shadow.hx" />
+        <option value="$PROJECT_DIR$/src/PlayState.hx" />
+        <option value="$PROJECT_DIR$/src/EnemyCar.hx" />
+        <option value="$PROJECT_DIR$/src/CarPart.hx" />
       </list>
     </option>
   </component>
@@ -669,13 +669,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/EnemyCar.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="37" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1920">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/lib/haxe/std/Math.hx">
       <provider selected="true" editor-type-id="text-editor">
         <state line="230" column="20" selection-start="7034" selection-end="7034" vertical-scroll-proportion="0.33333334" vertical-offset="3164" max-vertical-offset="5130">
@@ -851,23 +844,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CarPart.hx">
+    <entry file="file://$PROJECT_DIR$/src/Shadow.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="163" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0" vertical-offset="147" max-vertical-offset="1005">
+        <state line="3" column="6" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PlayState.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="101" selection-start="1412" selection-end="1412" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="3645">
+        <state line="163" column="19" selection-start="4522" selection-end="4522" vertical-scroll-proportion="0.33293268" vertical-offset="2168" max-vertical-offset="3615">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Shadow.hx">
+    <entry file="file://$PROJECT_DIR$/src/EnemyCar.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="55" selection-start="467" selection-end="467" vertical-scroll-proportion="0.2972028" vertical-offset="0" max-vertical-offset="858">
+        <state line="33" column="28" selection-start="862" selection-end="862" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1950">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CarPart.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="25" selection-start="600" selection-end="600" vertical-scroll-proportion="0.4055944" vertical-offset="27" max-vertical-offset="1005">
           <folding />
         </state>
       </provider>

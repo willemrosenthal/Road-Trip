@@ -27,6 +27,8 @@ class EnemyCar extends Car
         destination = startingDestination();
         updateDestinationTimer = Math.floor(updateDestinationTime * Math.random());
 
+        GroupControl.addShadow(new Shadow(this,'assets/images/e1.png'));
+
         xChange = 0.05;
         xChangeNormal = 0.05;
         xMax = 3;

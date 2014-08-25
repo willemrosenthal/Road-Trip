@@ -67,8 +67,7 @@ class PlayState extends FlxState
         cars.add(new ComplexCar(100,200,'interceptor-yellow','wheel-1','supercharger-0','oil-1',''));
 
         e = new EnemyCar(100,FlxG.height + 100);
-        //GroupControl.addCar(e);
-        //GroupControl.addShadow(new ShadowTest(e));
+        GroupControl.addCar(e);
 
         makeRoad();
         //FlxG.camera.follow(player, 2, 1.3);
@@ -163,8 +162,7 @@ class PlayState extends FlxState
 
     function newCarAttack():Void {
         e = new EnemyCar(-100 + Math.random() * (FlxG.width + 200),FlxG.height + 100);
-        //GroupControl.addCar(e);
-        //GroupControl.addShadow(new ShadowTest(e));
+        GroupControl.addCar(e);
         carTimer = 0;
     }
 
