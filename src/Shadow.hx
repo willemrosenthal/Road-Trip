@@ -14,8 +14,8 @@ class Shadow extends FlxSprite
 
     override public function update():Void {
         super.update();
-        this.x = shadowParent.x; // + shadowParent.xSpeed;
-        this.y = shadowParent.y + Global.shadowDistance; // + shadowParent.ySpeed;
+        this.x = shadowParent.x + Global.player.xSpeed;
+        this.y = shadowParent.y + Global.shadowDistance + Global.player.ySpeed;
         this.angle = shadowParent.angle;
 
     }

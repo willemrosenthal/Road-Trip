@@ -10,13 +10,18 @@ import openfl.ui.Accelerometer;
 class Player extends Car
 {
 
+    public var shake:Float = 0.3;
+
     private var deadzoneX:Float = 0.15;
     private var deadzoneY:Float = 0.08;
     private var zeroPoint:FlxPoint;
 
+    private var savedPosition:FlxPoint;
+
     public function new(X:Float, Y:Float, Body:String)
     {
         super(X, Y, Body);
+        savedPosition = new FlxPoint(X,Y);
         Global.player = this;
 
         weight = 20;
@@ -33,7 +38,13 @@ class Player extends Car
 		#end
     }
 
+    function preUpdate():Void {
+        x = savedPosition.x;
+        y = savedPosition.y;
+    }
+
     override public function update():Void {
+        preUpdate();
         super.update();
 
         if (impactSpeed == 0) {
@@ -105,8 +116,6 @@ class Player extends Car
         if (x > FlxG.worldBounds.width - width)
             x = FlxG.worldBounds.width - width - 1;
 
-
-
         if (FlxG.keys.justPressed.Z)
             startSwipeAttack(-1);
         if (FlxG.keys.justPressed.X)
@@ -114,6 +123,15 @@ class Player extends Car
 
         if (swipe == 0 && swipeTimer < 0)
             xSpeed *= 0.96;
+
+        savedPosition.x = x;
+        savedPosition.y = y;
+        shakeF();
+    }
+
+    function shakeF():Void {
+        x += Calc.plusOrMinus(Math.random() * shake);
+        y += Calc.plusOrMinus(Math.random() * shake);
     }
 
 }

@@ -9,6 +9,10 @@ class CarPart extends FlxSprite
     private var leader:Player;
     private var leaderOffset:FlxPoint = new FlxPoint();
 
+    private var isWheel:Int = 0;
+
+    public var shake:Float = 0.25;
+
     public function new(X:Float, Y:Float, Leader:Player, ?SimpleGraphic:Dynamic, Type:UInt = 0)
     {
         super(X, Y, SimpleGraphic);
@@ -18,7 +22,11 @@ class CarPart extends FlxSprite
         leaderOffset.x = x - leader.x;
         leaderOffset.y = y - leader.y;
 
-        if (Type == 1 || Type == 2 || Type == 3)
+        if (Type == 0)
+            isWheel = 1;
+        if (Type == 1)
+            shake = 1;
+        if (Type > 0)
             centeredOnCar();
 
         GroupControl.addShadow(new Shadow(this, SimpleGraphic));
@@ -26,10 +34,11 @@ class CarPart extends FlxSprite
 
     override public function update():Void {
         super.update();
-        this.x = leader.x + leaderOffset.x + leader.xSpeed;
-        this.y = leader.y + leaderOffset.y + leader.ySpeed;
+        this.x = leader.x + leaderOffset.x + (leader.xSpeed * isWheel);
+        this.y = leader.y + leaderOffset.y + (leader.ySpeed * isWheel);
         angle = 0;
         rotateWithCar();
+        shakeF();
     }
 
     private function rotateWithCar():Void {
@@ -40,8 +49,14 @@ class CarPart extends FlxSprite
         angle = leader.angle;
     }
 
+    private function shakeF():Void {
+        x += Calc.plusOrMinus(Math.random() * shake);
+        y += Calc.plusOrMinus(Math.random() * shake);
+    }
+
     private function centeredOnCar():Void {
         leaderOffset.x -= width * 0.5;
+        leaderOffset.y -= height * 0.5;
     }
 
 }

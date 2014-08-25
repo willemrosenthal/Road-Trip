@@ -53,15 +53,15 @@ class ComplexCar extends MultiSprite
 
         //extra parts
         if (supercharger != '') {
-            parts.push(new CarPart(x+leader.width*0.5, y+5, leader, 'assets/images/car/supercharger/' + supercharger + '.png', SUPERCHARGER));
+            parts.push(new CarPart(x+leader.width*0.5, y+13, leader, 'assets/images/car/supercharger/' + supercharger + '.png', SUPERCHARGER));
             add(parts[parts.length - 1]);
         }
         if (back != '') {
-            parts.push(new CarPart(x+leader.width*0.5, y+53, leader, 'assets/images/car/back/' + back + '.png', BACK));
+            parts.push(new CarPart(x+leader.width*0.5, y+60, leader, 'assets/images/car/back/' + back + '.png', BACK));
             add(parts[parts.length - 1]);
         }
         if (sides != '') {
-            parts.push(new CarPart(x,y, leader, 'assets/images/car/sides/' + sides + '.png', SIDES));
+            parts.push(new CarPart(x+leader.width*0.5, y+leader.height*0.5, leader, 'assets/images/car/sides/' + sides + '.png', SIDES));
             add(parts[parts.length - 1]);
         }
     }

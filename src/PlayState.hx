@@ -64,11 +64,7 @@ class PlayState extends FlxState
         add(hud);
 
 
-        cars.add(new ComplexCar(100,200,'interceptor-yellow','wheel-1','supercharger-0','oil-1'));
-        //player = new Player(50,50);
-        //cars.add(player);
-
-        //shadows.add(new ShadowTest(player));
+        cars.add(new ComplexCar(100,200,'interceptor-yellow','wheel-1','supercharger-0','oil-1',''));
 
         e = new EnemyCar(100,FlxG.height + 100);
         //GroupControl.addCar(e);
