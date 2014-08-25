@@ -16,14 +16,14 @@ class ShadowTest extends Car
     public function new(Follow:Car)
     {
         follow = Follow;
-        super(follow.x, follow.y, 'assets/images/player.png');
+        super(follow.x, follow.y, 'assets/images/complextest3.png');
         this.color = 0x000000;
     }
 
     override public function update():Void {
         super.update();
         this.x = follow.x + follow.xSpeed;
-        this.y = follow.y + 7 + follow.ySpeed;
+        this.y = follow.y + Global.shadowDistance + follow.ySpeed;
         this.angle = follow.angle;
 
     }

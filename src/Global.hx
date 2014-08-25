@@ -7,7 +7,10 @@ import flixel.group.FlxGroup;
 
 class Global {
 
+    // world
 	static public var speed:Float = 20;
+    static public var shadowDistance:Float = 7;
+
     static public var player:Player;
 
     // cameras

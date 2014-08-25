@@ -14,15 +14,18 @@ class Player extends Car
     private var deadzoneY:Float = 0.08;
     private var zeroPoint:FlxPoint;
 
-    public function new(X:Float, Y:Float)
+    public function new(X:Float, Y:Float, Body:String)
     {
-        super(X, Y, 'assets/images/player.png');
+        super(X, Y, Body);
         Global.player = this;
 
         weight = 20;
         swipeCooldown = -40;
         health = 100;
         swipeAttackDamage = 10;
+
+
+        GroupControl.addShadow(new Shadow(this, Body));
 
         #if cpp
 			var data = Accelerometer.get();

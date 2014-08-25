@@ -55,6 +55,7 @@ class PlayState extends FlxState
         Global.cars = cars;
         add(cars);
 
+
         numbers = new FlxGroup();
         Global.numbers = numbers;
         add(numbers);
@@ -63,14 +64,15 @@ class PlayState extends FlxState
         add(hud);
 
 
-        player = new Player(50,50);
-        cars.add(player);
+        cars.add(new ComplexCar(100,200,'interceptor-yellow','wheel-1','supercharger-0','oil-1'));
+        //player = new Player(50,50);
+        //cars.add(player);
 
-        shadows.add(new ShadowTest(player));
+        //shadows.add(new ShadowTest(player));
 
         e = new EnemyCar(100,FlxG.height + 100);
-        GroupControl.addCar(e);
-        GroupControl.addShadow(new ShadowTest(e));
+        //GroupControl.addCar(e);
+        //GroupControl.addShadow(new ShadowTest(e));
 
         makeRoad();
         //FlxG.camera.follow(player, 2, 1.3);
@@ -82,7 +84,7 @@ class PlayState extends FlxState
 
     function setupCameras():Void {
         shadowCamera = new FlxCamera();
-        shadowCamera.alpha = 0.3;
+        shadowCamera.alpha = 0.45;
         shadowCamera.bgColor = FlxColor.TRANSPARENT;
         shadowCamera.bounds = FlxG.worldBounds;
         FlxG.cameras.add(shadowCamera);
@@ -158,15 +160,15 @@ class PlayState extends FlxState
 	}
 
     function cameraControl():Void {
-        FlxG.camera.scroll.x = player.x - FlxG.camera.width * 0.5;
-        shadowCamera.scroll.x = player.x - shadowCamera.width * 0.5;
-        fgCamera.scroll.x = player.x - shadowCamera.width * 0.5;
+        FlxG.camera.scroll.x = Global.player.x - FlxG.camera.width * 0.5;
+        shadowCamera.scroll.x = Global.player.x - shadowCamera.width * 0.5;
+        fgCamera.scroll.x = Global.player.x - shadowCamera.width * 0.5;
     }
 
     function newCarAttack():Void {
         e = new EnemyCar(-100 + Math.random() * (FlxG.width + 200),FlxG.height + 100);
-        GroupControl.addCar(e);
-        GroupControl.addShadow(new ShadowTest(e));
+        //GroupControl.addCar(e);
+        //GroupControl.addShadow(new ShadowTest(e));
         carTimer = 0;
     }
 

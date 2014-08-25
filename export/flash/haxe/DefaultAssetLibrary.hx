@@ -48,6 +48,40 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/data/data-goes-here.txt", __ASSET__assets_data_data_goes_here_txt);
 		type.set ("assets/data/data-goes-here.txt", AssetType.TEXT);
+		className.set ("assets/images/car/back/oil-1.png", __ASSET__assets_images_car_back_oil_1_png);
+		type.set ("assets/images/car/back/oil-1.png", AssetType.IMAGE);
+		className.set ("assets/images/car/back/weight.png", __ASSET__assets_images_car_back_weight_png);
+		type.set ("assets/images/car/back/weight.png", AssetType.IMAGE);
+		className.set ("assets/images/car/body/interceptor-grey.png", __ASSET__assets_images_car_body_interceptor_grey_png);
+		type.set ("assets/images/car/body/interceptor-grey.png", AssetType.IMAGE);
+		className.set ("assets/images/car/body/interceptor-orange.png", __ASSET__assets_images_car_body_interceptor_orange_png);
+		type.set ("assets/images/car/body/interceptor-orange.png", AssetType.IMAGE);
+		className.set ("assets/images/car/body/interceptor-yellow.png", __ASSET__assets_images_car_body_interceptor_yellow_png);
+		type.set ("assets/images/car/body/interceptor-yellow.png", AssetType.IMAGE);
+		className.set ("assets/images/car/sides/girder.png", __ASSET__assets_images_car_sides_girder_png);
+		type.set ("assets/images/car/sides/girder.png", AssetType.IMAGE);
+		className.set ("assets/images/car/supercharger/supercharger-0.png", __ASSET__assets_images_car_supercharger_supercharger_0_png);
+		type.set ("assets/images/car/supercharger/supercharger-0.png", AssetType.IMAGE);
+		className.set ("assets/images/car/supercharger/supercharger-1.png", __ASSET__assets_images_car_supercharger_supercharger_1_png);
+		type.set ("assets/images/car/supercharger/supercharger-1.png", AssetType.IMAGE);
+		className.set ("assets/images/car/supercharger/supercharger-2.png", __ASSET__assets_images_car_supercharger_supercharger_2_png);
+		type.set ("assets/images/car/supercharger/supercharger-2.png", AssetType.IMAGE);
+		className.set ("assets/images/car/wheels/1.png", __ASSET__assets_images_car_wheels_1_png);
+		type.set ("assets/images/car/wheels/1.png", AssetType.IMAGE);
+		className.set ("assets/images/car/wheels/2.png", __ASSET__assets_images_car_wheels_2_png);
+		type.set ("assets/images/car/wheels/2.png", AssetType.IMAGE);
+		className.set ("assets/images/car/wheels/3.png", __ASSET__assets_images_car_wheels_3_png);
+		type.set ("assets/images/car/wheels/3.png", AssetType.IMAGE);
+		className.set ("assets/images/car/wheels/4.png", __ASSET__assets_images_car_wheels_4_png);
+		type.set ("assets/images/car/wheels/4.png", AssetType.IMAGE);
+		className.set ("assets/images/car/wheels/wheel-1.png", __ASSET__assets_images_car_wheels_wheel_1_png);
+		type.set ("assets/images/car/wheels/wheel-1.png", AssetType.IMAGE);
+		className.set ("assets/images/complextest.png", __ASSET__assets_images_complextest_png);
+		type.set ("assets/images/complextest.png", AssetType.IMAGE);
+		className.set ("assets/images/complextest2.png", __ASSET__assets_images_complextest2_png);
+		type.set ("assets/images/complextest2.png", AssetType.IMAGE);
+		className.set ("assets/images/complextest3.png", __ASSET__assets_images_complextest3_png);
+		type.set ("assets/images/complextest3.png", AssetType.IMAGE);
 		className.set ("assets/images/e1.png", __ASSET__assets_images_e1_png);
 		type.set ("assets/images/e1.png", AssetType.IMAGE);
 		className.set ("assets/images/e2.png", __ASSET__assets_images_e2_png);
@@ -76,6 +110,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/road/road1.png", AssetType.IMAGE);
 		className.set ("assets/images/road/road2.png", __ASSET__assets_images_road_road2_png);
 		type.set ("assets/images/road/road2.png", AssetType.IMAGE);
+		className.set ("assets/images/simple.png", __ASSET__assets_images_simple_png);
+		type.set ("assets/images/simple.png", AssetType.IMAGE);
 		className.set ("assets/music/music-goes-here.txt", __ASSET__assets_music_music_goes_here_txt);
 		type.set ("assets/music/music-goes-here.txt", AssetType.TEXT);
 		className.set ("assets/sounds/sounds-go-here.txt", __ASSET__assets_sounds_sounds_go_here_txt);
@@ -92,6 +128,57 @@ class DefaultAssetLibrary extends AssetLibrary {
 		id = "assets/data/data-goes-here.txt";
 		path.set (id, id);
 		type.set (id, AssetType.TEXT);
+		id = "assets/images/car/back/oil-1.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/car/back/weight.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/car/body/interceptor-grey.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/car/body/interceptor-orange.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/car/body/interceptor-yellow.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/car/sides/girder.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/car/supercharger/supercharger-0.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/car/supercharger/supercharger-1.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/car/supercharger/supercharger-2.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/car/wheels/1.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/car/wheels/2.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/car/wheels/3.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/car/wheels/4.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/car/wheels/wheel-1.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/complextest.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/complextest2.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/complextest3.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
 		id = "assets/images/e1.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
@@ -134,6 +221,9 @@ class DefaultAssetLibrary extends AssetLibrary {
 		id = "assets/images/road/road2.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
+		id = "assets/images/simple.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
 		id = "assets/music/music-goes-here.txt";
 		path.set (id, id);
 		type.set (id, AssetType.TEXT);
@@ -156,6 +246,57 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/data/data-goes-here.txt", __ASSET__assets_data_data_goes_here_txt);
 		type.set ("assets/data/data-goes-here.txt", AssetType.TEXT);
+		
+		className.set ("assets/images/car/back/oil-1.png", __ASSET__assets_images_car_back_oil_1_png);
+		type.set ("assets/images/car/back/oil-1.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/car/back/weight.png", __ASSET__assets_images_car_back_weight_png);
+		type.set ("assets/images/car/back/weight.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/car/body/interceptor-grey.png", __ASSET__assets_images_car_body_interceptor_grey_png);
+		type.set ("assets/images/car/body/interceptor-grey.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/car/body/interceptor-orange.png", __ASSET__assets_images_car_body_interceptor_orange_png);
+		type.set ("assets/images/car/body/interceptor-orange.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/car/body/interceptor-yellow.png", __ASSET__assets_images_car_body_interceptor_yellow_png);
+		type.set ("assets/images/car/body/interceptor-yellow.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/car/sides/girder.png", __ASSET__assets_images_car_sides_girder_png);
+		type.set ("assets/images/car/sides/girder.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/car/supercharger/supercharger-0.png", __ASSET__assets_images_car_supercharger_supercharger_0_png);
+		type.set ("assets/images/car/supercharger/supercharger-0.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/car/supercharger/supercharger-1.png", __ASSET__assets_images_car_supercharger_supercharger_1_png);
+		type.set ("assets/images/car/supercharger/supercharger-1.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/car/supercharger/supercharger-2.png", __ASSET__assets_images_car_supercharger_supercharger_2_png);
+		type.set ("assets/images/car/supercharger/supercharger-2.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/car/wheels/1.png", __ASSET__assets_images_car_wheels_1_png);
+		type.set ("assets/images/car/wheels/1.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/car/wheels/2.png", __ASSET__assets_images_car_wheels_2_png);
+		type.set ("assets/images/car/wheels/2.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/car/wheels/3.png", __ASSET__assets_images_car_wheels_3_png);
+		type.set ("assets/images/car/wheels/3.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/car/wheels/4.png", __ASSET__assets_images_car_wheels_4_png);
+		type.set ("assets/images/car/wheels/4.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/car/wheels/wheel-1.png", __ASSET__assets_images_car_wheels_wheel_1_png);
+		type.set ("assets/images/car/wheels/wheel-1.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/complextest.png", __ASSET__assets_images_complextest_png);
+		type.set ("assets/images/complextest.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/complextest2.png", __ASSET__assets_images_complextest2_png);
+		type.set ("assets/images/complextest2.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/complextest3.png", __ASSET__assets_images_complextest3_png);
+		type.set ("assets/images/complextest3.png", AssetType.IMAGE);
 		
 		className.set ("assets/images/e1.png", __ASSET__assets_images_e1_png);
 		type.set ("assets/images/e1.png", AssetType.IMAGE);
@@ -198,6 +339,9 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/images/road/road2.png", __ASSET__assets_images_road_road2_png);
 		type.set ("assets/images/road/road2.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/simple.png", __ASSET__assets_images_simple_png);
+		type.set ("assets/images/simple.png", AssetType.IMAGE);
 		
 		className.set ("assets/music/music-goes-here.txt", __ASSET__assets_music_music_goes_here_txt);
 		type.set ("assets/music/music-goes-here.txt", AssetType.TEXT);
@@ -828,6 +972,23 @@ class DefaultAssetLibrary extends AssetLibrary {
 #elseif flash
 
 @:keep class __ASSET__assets_data_data_goes_here_txt extends openfl.utils.ByteArray { }
+@:keep class __ASSET__assets_images_car_back_oil_1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_car_back_weight_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_car_body_interceptor_grey_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_car_body_interceptor_orange_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_car_body_interceptor_yellow_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_car_sides_girder_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_car_supercharger_supercharger_0_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_car_supercharger_supercharger_1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_car_supercharger_supercharger_2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_car_wheels_1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_car_wheels_2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_car_wheels_3_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_car_wheels_4_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_car_wheels_wheel_1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_complextest_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_complextest2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_complextest3_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__assets_images_e1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__assets_images_e2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__assets_images_e3_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
@@ -842,6 +1003,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:keep class __ASSET__assets_images_road_road0_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__assets_images_road_road1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__assets_images_road_road2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_simple_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__assets_music_music_goes_here_txt extends openfl.utils.ByteArray { }
 @:keep class __ASSET__assets_sounds_sounds_go_here_txt extends openfl.utils.ByteArray { }
 @:keep class __ASSET__assets_sounds_beep_mp3 extends openfl.media.Sound { }
@@ -871,10 +1033,45 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #elseif (windows || mac || linux)
 
 
 @:file("assets/data/data-goes-here.txt") class __ASSET__assets_data_data_goes_here_txt extends flash.utils.ByteArray {}
+@:bitmap("assets/images/car/back/oil-1.png") class __ASSET__assets_images_car_back_oil_1_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/car/back/weight.png") class __ASSET__assets_images_car_back_weight_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/car/body/interceptor-grey.png") class __ASSET__assets_images_car_body_interceptor_grey_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/car/body/interceptor-orange.png") class __ASSET__assets_images_car_body_interceptor_orange_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/car/body/interceptor-yellow.png") class __ASSET__assets_images_car_body_interceptor_yellow_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/car/sides/girder.png") class __ASSET__assets_images_car_sides_girder_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/car/supercharger/supercharger-0.png") class __ASSET__assets_images_car_supercharger_supercharger_0_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/car/supercharger/supercharger-1.png") class __ASSET__assets_images_car_supercharger_supercharger_1_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/car/supercharger/supercharger-2.png") class __ASSET__assets_images_car_supercharger_supercharger_2_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/car/wheels/1.png") class __ASSET__assets_images_car_wheels_1_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/car/wheels/2.png") class __ASSET__assets_images_car_wheels_2_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/car/wheels/3.png") class __ASSET__assets_images_car_wheels_3_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/car/wheels/4.png") class __ASSET__assets_images_car_wheels_4_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/car/wheels/wheel-1.png") class __ASSET__assets_images_car_wheels_wheel_1_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/complextest.png") class __ASSET__assets_images_complextest_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/complextest2.png") class __ASSET__assets_images_complextest2_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/complextest3.png") class __ASSET__assets_images_complextest3_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/e1.png") class __ASSET__assets_images_e1_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/e2.png") class __ASSET__assets_images_e2_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/e3.png") class __ASSET__assets_images_e3_png extends flash.display.BitmapData {}
@@ -889,6 +1086,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:bitmap("assets/images/road/road0.png") class __ASSET__assets_images_road_road0_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/road/road1.png") class __ASSET__assets_images_road_road1_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/road/road2.png") class __ASSET__assets_images_road_road2_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/simple.png") class __ASSET__assets_images_simple_png extends flash.display.BitmapData {}
 @:file("assets/music/music-goes-here.txt") class __ASSET__assets_music_music_goes_here_txt extends flash.utils.ByteArray {}
 @:file("assets/sounds/sounds-go-here.txt") class __ASSET__assets_sounds_sounds_go_here_txt extends flash.utils.ByteArray {}
 @:sound("/usr/lib/haxe/lib/flixel/3,3,5/assets/sounds/beep.mp3") class __ASSET__assets_sounds_beep_mp3 extends flash.media.Sound {}
