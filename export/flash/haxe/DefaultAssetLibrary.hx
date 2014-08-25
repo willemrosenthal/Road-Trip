@@ -52,6 +52,10 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/car/back/oil-1.png", AssetType.IMAGE);
 		className.set ("assets/images/car/back/weight.png", __ASSET__assets_images_car_back_weight_png);
 		type.set ("assets/images/car/back/weight.png", AssetType.IMAGE);
+		className.set ("assets/images/car/body/camero-blue-old.png", __ASSET__assets_images_car_body_camero_blue_old_png);
+		type.set ("assets/images/car/body/camero-blue-old.png", AssetType.IMAGE);
+		className.set ("assets/images/car/body/camero-blue.png", __ASSET__assets_images_car_body_camero_blue_png);
+		type.set ("assets/images/car/body/camero-blue.png", AssetType.IMAGE);
 		className.set ("assets/images/car/body/interceptor-grey.png", __ASSET__assets_images_car_body_interceptor_grey_png);
 		type.set ("assets/images/car/body/interceptor-grey.png", AssetType.IMAGE);
 		className.set ("assets/images/car/body/interceptor-orange.png", __ASSET__assets_images_car_body_interceptor_orange_png);
@@ -132,6 +136,12 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
 		id = "assets/images/car/back/weight.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/car/body/camero-blue-old.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/car/body/camero-blue.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
 		id = "assets/images/car/body/interceptor-grey.png";
@@ -252,6 +262,12 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/images/car/back/weight.png", __ASSET__assets_images_car_back_weight_png);
 		type.set ("assets/images/car/back/weight.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/car/body/camero-blue-old.png", __ASSET__assets_images_car_body_camero_blue_old_png);
+		type.set ("assets/images/car/body/camero-blue-old.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/car/body/camero-blue.png", __ASSET__assets_images_car_body_camero_blue_png);
+		type.set ("assets/images/car/body/camero-blue.png", AssetType.IMAGE);
 		
 		className.set ("assets/images/car/body/interceptor-grey.png", __ASSET__assets_images_car_body_interceptor_grey_png);
 		type.set ("assets/images/car/body/interceptor-grey.png", AssetType.IMAGE);
@@ -974,6 +990,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:keep class __ASSET__assets_data_data_goes_here_txt extends openfl.utils.ByteArray { }
 @:keep class __ASSET__assets_images_car_back_oil_1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__assets_images_car_back_weight_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_car_body_camero_blue_old_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_car_body_camero_blue_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__assets_images_car_body_interceptor_grey_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__assets_images_car_body_interceptor_orange_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__assets_images_car_body_interceptor_yellow_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
@@ -1051,12 +1069,16 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
+
+
 #elseif (windows || mac || linux)
 
 
 @:file("assets/data/data-goes-here.txt") class __ASSET__assets_data_data_goes_here_txt extends flash.utils.ByteArray {}
 @:bitmap("assets/images/car/back/oil-1.png") class __ASSET__assets_images_car_back_oil_1_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/car/back/weight.png") class __ASSET__assets_images_car_back_weight_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/car/body/camero-blue-old.png") class __ASSET__assets_images_car_body_camero_blue_old_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/car/body/camero-blue.png") class __ASSET__assets_images_car_body_camero_blue_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/car/body/interceptor-grey.png") class __ASSET__assets_images_car_body_interceptor_grey_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/car/body/interceptor-orange.png") class __ASSET__assets_images_car_body_interceptor_orange_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/car/body/interceptor-yellow.png") class __ASSET__assets_images_car_body_interceptor_yellow_png extends flash.display.BitmapData {}

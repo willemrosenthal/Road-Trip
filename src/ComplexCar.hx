@@ -12,6 +12,8 @@ class ComplexCar extends MultiSprite
     private var BACK:UInt = 2;
     private var SIDES:UInt = 3;
 
+    private var wa:Int;
+
     private var body:String;
     private var wheels:String;
     private var supercharger:String;
@@ -20,11 +22,13 @@ class ComplexCar extends MultiSprite
 
     public var leader:Player;
 
-    public function new(X:Float, Y:Float, Body:String, Wheels:String, Supercharger:String = '', Back:String = '', Sides:String = '') {
+    public function new(X:Float, Y:Float, Body:String, Wheels:String, Supercharger:String = '', Back:String = '', Sides:String = '',WheelAdjust:Int = 0) {
         super();
 
         x = X;
         y = Y;
+
+        wa = WheelAdjust;
 
         body = Body;
         wheels = Wheels;
@@ -40,13 +44,13 @@ class ComplexCar extends MultiSprite
         leader = new Player(x,y,'assets/images/car/body/' + body + '.png');
 
         //wheels
-        parts.push(new CarPart(x-4,y+12, leader,'assets/images/car/wheels/' + wheels + '.png'));
+        parts.push(new CarPart(x-4 - wa,y+12, leader,'assets/images/car/wheels/' + wheels + '.png'));
         add(parts[0]);
-        parts.push(new CarPart(x+28,y+12, leader,'assets/images/car/wheels/' + wheels + '.png'));
+        parts.push(new CarPart(x+28 + wa,y+12, leader,'assets/images/car/wheels/' + wheels + '.png'));
         add(parts[1]);
-        parts.push(new CarPart(x-3,y+53, leader,'assets/images/car/wheels/' + wheels + '.png'));
+        parts.push(new CarPart(x-3 - wa,y+53, leader,'assets/images/car/wheels/' + wheels + '.png'));
         add(parts[2]);
-        parts.push(new CarPart(x+27,y+53, leader,'assets/images/car/wheels/' + wheels + '.png'));
+        parts.push(new CarPart(x+27 + wa,y+53, leader,'assets/images/car/wheels/' + wheels + '.png'));
         add(parts[3]);
 
         add(leader);
