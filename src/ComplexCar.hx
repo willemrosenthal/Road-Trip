@@ -19,10 +19,11 @@ class ComplexCar extends MultiSprite
     private var supercharger:String;
     private var back:String;
     private var sides:String;
+    private var gun:String;
 
     public var leader:Player;
 
-    public function new(X:Float, Y:Float, Body:String, Wheels:String, Supercharger:String = '', Back:String = '', Sides:String = '',WheelAdjust:Int = 0) {
+    public function new(X:Float, Y:Float, Body:String, Wheels:String, Supercharger:String = '', Back:String = '', Sides:String = '', Gun:String = '', WheelAdjust:Int = 0) {
         super();
 
         x = X;
@@ -33,8 +34,9 @@ class ComplexCar extends MultiSprite
         body = Body;
         wheels = Wheels;
         supercharger = Supercharger;
-        back = Back;
+        back = 'gunmount1'; // Back;
         sides = Sides;
+        gun = Gun;
 
         buildCar();
     }
@@ -61,11 +63,16 @@ class ComplexCar extends MultiSprite
             add(parts[parts.length - 1]);
         }
         if (back != '') {
-            parts.push(new CarPart(x+leader.width*0.5, y+60, leader, 'assets/images/car/back/' + back + '.png', BACK));
+            //parts.push(new CarPart(x+leader.width*0.5, y+60, leader, 'assets/images/car/back/' + back + '.png', BACK));
+            parts.push(new CarPart(x+leader.width*0.5, y+61, leader, 'assets/images/car/gun/' + back + '.png', BACK));
             add(parts[parts.length - 1]);
         }
         if (sides != '') {
             parts.push(new CarPart(x+leader.width*0.5, y+leader.height*0.5, leader, 'assets/images/car/sides/' + sides + '.png', SIDES));
+            add(parts[parts.length - 1]);
+        }
+        if (gun != '') {
+            parts.push(new CarGun(x+leader.width*0.5, y+59, leader, gun));
             add(parts[parts.length - 1]);
         }
     }

@@ -32,7 +32,7 @@ class Player extends Car
 
         GroupControl.addShadow(new Shadow(this, Body));
 
-        #if cpp
+        #if ios
 			var data = Accelerometer.get();
 			zeroPoint = new FlxPoint(data.x,data.y);
 		#end
@@ -57,7 +57,8 @@ class Player extends Car
             if (FlxG.keys.pressed.UP)
                 ySpeed -= xChange;
 
-            #if cpp
+
+            #if ios
                 var data = Accelerometer.get();
 
 
@@ -91,18 +92,19 @@ class Player extends Car
                 Global.txt.text = Std.string(data.y) + " " + Std.string(zeroPoint.y);
                 //Global.txt.text = Std.string(Math.round(data.x * 10))
 
-                /*
-                if (data.x > 1)
-                    Global.txt.text = "greater"; //Std.string(Math.round(data.x));
-                if (data.x < 1)
-                    Global.txt.text = "lesser"; //Std.string(Math.round(data.x));
-                */
+
+//                if (data.x > 1)
+//                    Global.txt.text = "greater"; //Std.string(Math.round(data.x));
+//                if (data.x < 1)
+//                    Global.txt.text = "lesser"; //Std.string(Math.round(data.x));
+
 
                 if (FlxG.mouse.justPressed) {
                     zeroPoint = new FlxPoint(data.x,data.y);
                 }
 
             #end
+
         }
 
         if (y < 0)

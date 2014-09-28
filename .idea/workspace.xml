@@ -66,28 +66,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Array.hx" pinned="false" current="false" current-in-tab="false">
-        <entry file="file:///usr/lib/haxe/std/Array.hx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="13" selection-start="1230" selection-end="1230" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4365">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MultiSprite.hx" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MultiSprite.hx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="50" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CarPart.hx" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CarPart.hx">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="25" selection-start="600" selection-end="600" vertical-scroll-proportion="0.0" vertical-offset="27" max-vertical-offset="1005">
+            <state line="45" column="39" selection-start="1211" selection-end="1211" vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="1005">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CarGun.hx" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CarGun.hx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="62" selection-start="646" selection-end="665" vertical-scroll-proportion="0.0" vertical-offset="41" max-vertical-offset="1335">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Project.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Project.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="64" column="45" selection-start="2515" selection-end="2515" vertical-scroll-proportion="-34.346153" vertical-offset="67" max-vertical-offset="1335">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Player.hx" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Player.hx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="0" selection-start="677" selection-end="778" vertical-scroll-proportion="0.10741886" vertical-offset="371" max-vertical-offset="2160">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CarParts.hx" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CarParts.hx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="36" selection-start="587" selection-end="587" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
               <folding />
             </state>
           </provider>
@@ -96,7 +114,7 @@
       <file leaf-file-name="Calc.hx" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Calc.hx">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="38" selection-start="82" selection-end="93" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+            <state line="5" column="38" selection-start="82" selection-end="93" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="315">
               <folding />
             </state>
           </provider>
@@ -111,28 +129,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayState.hx" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PlayState.hx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="53" selection-start="1817" selection-end="1817" vertical-scroll-proportion="0.0" vertical-offset="623" max-vertical-offset="3615">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ComplexCar.hx" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ComplexCar.hx" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ComplexCar.hx">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="67" selection-start="1479" selection-end="1479" vertical-scroll-proportion="0.63100964" vertical-offset="255" max-vertical-offset="1440">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FlxAngle.hx" pinned="false" current="false" current-in-tab="false">
-        <entry file="file:///usr/lib/haxe/lib/flixel/3,3,5/flixel/util/FlxAngle.hx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="10" selection-start="2717" selection-end="2717" vertical-scroll-proportion="-25.423077" vertical-offset="1019" max-vertical-offset="6300">
+            <state line="69" column="26" selection-start="2239" selection-end="2239" vertical-scroll-proportion="0.0" vertical-offset="249" max-vertical-offset="1545">
               <folding />
             </state>
           </provider>
@@ -141,7 +141,7 @@
       <file leaf-file-name="FlxAngleAlt.hx" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FlxAngleAlt.hx">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="91" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6330">
+            <state line="42" column="34" selection-start="1370" selection-end="1370" vertical-scroll-proportion="0.0" vertical-offset="199" max-vertical-offset="6330">
               <folding />
             </state>
           </provider>
@@ -150,7 +150,7 @@
       <file leaf-file-name="GroupControl.hx" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GroupControl.hx">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+            <state line="2" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="330">
               <folding />
             </state>
           </provider>
@@ -166,7 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Project.xml" />
         <option value="$PROJECT_DIR$/src/BattleScore.hx" />
         <option value="$PROJECT_DIR$/src/Line.hx" />
         <option value="$PROJECT_DIR$/src/Parallax.hx" />
@@ -181,17 +180,19 @@
         <option value="$PROJECT_DIR$/src/MultiSprite.hx" />
         <option value="/usr/lib/haxe/lib/flixel/3,3,5/flixel/util/FlxAngle.hx" />
         <option value="$PROJECT_DIR$/src/Calc.hx" />
-        <option value="$PROJECT_DIR$/src/Player.hx" />
         <option value="$PROJECT_DIR$/src/Shadow.hx" />
         <option value="$PROJECT_DIR$/src/EnemyCar.hx" />
         <option value="$PROJECT_DIR$/src/CarPart.hx" />
-        <option value="$PROJECT_DIR$/src/PlayState.hx" />
         <option value="$PROJECT_DIR$/src/ComplexCar.hx" />
+        <option value="$PROJECT_DIR$/src/PlayState.hx" />
+        <option value="$PROJECT_DIR$/Project.xml" />
+        <option value="$PROJECT_DIR$/src/CarParts.hx" />
+        <option value="$PROJECT_DIR$/src/CarGun.hx" />
+        <option value="$PROJECT_DIR$/src/Player.hx" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="18" />
     <option name="y" value="22" />
     <option name="width" value="2560" />
     <option name="height" value="1414" />
@@ -222,6 +223,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -293,7 +295,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -308,6 +309,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="SearchEverywhereHistory" value="" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -475,7 +477,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="18" y="22" width="2560" height="1414" extended-state="6" />
+    <frame x="0" y="22" width="2560" height="1414" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -483,7 +485,6 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32980332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -498,8 +499,9 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18910742" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -518,21 +520,11 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/lib/haxe/lib/flixel/3,3,5/flixel/text/FlxText.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="228" column="36" selection-start="6462" selection-end="6469" vertical-scroll-proportion="0.0" vertical-offset="2998" max-vertical-offset="15225">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Line.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="20" selection-start="156" selection-end="180" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="390">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/lib/haxe/lib/flixel/3,3,5/flixel/FlxObject.hx">
       <provider selected="true" editor-type-id="text-editor">
         <state line="473" column="23" selection-start="16984" selection-end="16987" vertical-scroll-proportion="0.0" vertical-offset="6673" max-vertical-offset="16170">
@@ -636,13 +628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="31" selection-start="1287" selection-end="1287" vertical-scroll-proportion="-17.307692" vertical-offset="0" max-vertical-offset="1320">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Reg.hx">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="758">
@@ -652,9 +637,7 @@
     </entry>
     <entry file="file:///usr/lib/haxe/lib/flixel/3,3,5/flixel/input/keyboard/FlxKeyboard.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="36" selection-start="3455" selection-end="3471" vertical-scroll-proportion="0.0" vertical-offset="1383" max-vertical-offset="10530">
-          <folding />
-        </state>
+        <state line="117" column="36" selection-start="3455" selection-end="3471" vertical-scroll-proportion="0.0" vertical-offset="1383" max-vertical-offset="10530" />
       </provider>
     </entry>
     <entry file="file:///usr/lib/haxe/lib/flixel/3,3,5/flixel/FlxGame.hx">
@@ -692,9 +675,7 @@
     </entry>
     <entry file="file:///usr/lib/haxe/lib/flixel/3,3,5/flixel/util/FlxSpriteUtil.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="576" column="101" selection-start="21956" selection-end="21960" vertical-scroll-proportion="0.0" vertical-offset="8057" max-vertical-offset="9945">
-          <folding />
-        </state>
+        <state line="576" column="101" selection-start="21956" selection-end="21960" vertical-scroll-proportion="0.0" vertical-offset="8057" max-vertical-offset="9945" />
       </provider>
     </entry>
     <entry file="file:///usr/lib/haxe/lib/flixel/3,3,5/flixel/text/FlxText.hx">
@@ -732,20 +713,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="39" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1095">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/haxe/lib/flixel/3,3,5/flixel/FlxObject.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="355" column="15" selection-start="12350" selection-end="12350" vertical-scroll-proportion="0.0" vertical-offset="4909" max-vertical-offset="16170">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/lib/haxe/lib/flixel/3,3,5/flixel/group/FlxGroup.hx">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="27" selection-start="438" selection-end="438" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="1050">
@@ -753,18 +720,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/lib/haxe/lib/flixel/3,3,5/flixel/FlxSprite.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="192" column="20" selection-start="6632" selection-end="6685" vertical-scroll-proportion="-16.23077" vertical-offset="2458" max-vertical-offset="23790">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/lib/haxe/lib/flixel/3,3,5/flixel/group/FlxTypedGroup.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="341" column="27" selection-start="9488" selection-end="9495" vertical-scroll-proportion="-23.153847" vertical-offset="4513" max-vertical-offset="11250">
-          <folding />
-        </state>
+        <state line="341" column="27" selection-start="9488" selection-end="9495" vertical-scroll-proportion="-23.153847" vertical-offset="4513" max-vertical-offset="11250" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Global.hx">
@@ -781,58 +739,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/lib/haxe/std/Array.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="13" selection-start="1230" selection-end="1230" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4365">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GroupControl.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Car.hx">
       <provider selected="true" editor-type-id="text-editor">
         <state line="80" column="53" selection-start="1890" selection-end="1890" vertical-scroll-proportion="0.0" vertical-offset="703" max-vertical-offset="3330">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MultiSprite.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="50" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FlxAngleAlt.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="91" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6330">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/haxe/lib/flixel/3,3,5/flixel/util/FlxAngle.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="10" selection-start="2717" selection-end="2717" vertical-scroll-proportion="-25.423077" vertical-offset="1019" max-vertical-offset="6300">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Calc.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="38" selection-start="82" selection-end="93" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="32" selection-start="191" selection-end="191" vertical-scroll-proportion="0.02097902" vertical-offset="162" max-vertical-offset="2130">
           <folding />
         </state>
       </provider>
@@ -844,9 +753,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///usr/lib/haxe/std/Array.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="13" selection-start="1230" selection-end="1230" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4365">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MultiSprite.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="23" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/haxe/lib/flixel/3,3,5/flixel/util/FlxAngle.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="112" column="10" selection-start="2717" selection-end="2717" vertical-scroll-proportion="0.0" vertical-offset="1019" max-vertical-offset="6300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GroupControl.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/haxe/lib/flixel/3,3,5/flixel/FlxObject.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="352" column="20" selection-start="12185" selection-end="12190" vertical-scroll-proportion="-16.23077" vertical-offset="4858" max-vertical-offset="16170">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FlxAngleAlt.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="34" selection-start="1370" selection-end="1370" vertical-scroll-proportion="0.0" vertical-offset="199" max-vertical-offset="6330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Calc.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="38" selection-start="82" selection-end="93" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/haxe/lib/flixel/3,3,5/flixel/FlxSprite.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="116" column="7" selection-start="3934" selection-end="3934" vertical-scroll-proportion="0.0" vertical-offset="1249" max-vertical-offset="23790">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="114" selection-start="340" selection-end="342" vertical-scroll-proportion="-6.923077" vertical-offset="0" max-vertical-offset="1095">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/CarPart.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="25" selection-start="600" selection-end="600" vertical-scroll-proportion="0.0" vertical-offset="27" max-vertical-offset="1005">
+        <state line="45" column="39" selection-start="1211" selection-end="1211" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1005">
           <folding />
         </state>
       </provider>
@@ -858,16 +830,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PlayState.hx">
+    <entry file="file://$PROJECT_DIR$/src/ComplexCar.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="53" selection-start="1817" selection-end="1817" vertical-scroll-proportion="0.0" vertical-offset="623" max-vertical-offset="3615">
+        <state line="69" column="26" selection-start="2239" selection-end="2239" vertical-scroll-proportion="0.0" vertical-offset="249" max-vertical-offset="1545">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ComplexCar.hx">
+    <entry file="file://$PROJECT_DIR$/src/CarParts.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="67" selection-start="1479" selection-end="1479" vertical-scroll-proportion="0.63100964" vertical-offset="255" max-vertical-offset="1440">
+        <state line="18" column="36" selection-start="587" selection-end="587" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="45" selection-start="2515" selection-end="2515" vertical-scroll-proportion="-34.346153" vertical-offset="67" max-vertical-offset="1335">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CarGun.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="62" selection-start="646" selection-end="665" vertical-scroll-proportion="0.0" vertical-offset="41" max-vertical-offset="1335">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PlayState.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="0" selection-start="856" selection-end="856" vertical-scroll-proportion="0.048686244" vertical-offset="567" max-vertical-offset="3615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Player.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="0" selection-start="677" selection-end="778" vertical-scroll-proportion="0.10741886" vertical-offset="371" max-vertical-offset="2160">
           <folding />
         </state>
       </provider>
