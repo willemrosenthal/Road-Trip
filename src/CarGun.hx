@@ -35,7 +35,7 @@ class CarGun extends FlxSprite
         leaderOffset.y = y - leader.y + gunStats[4];
         centeredOnCar();
 
-        //GroupControl.addShadow(new Shadow(this, SimpleGraphic));
+        GroupControl.addShadow(new Shadow(this, 'assets/images/car/gun/' + gunStats[0] + '_shadow.png', false, gunStats[3], gunStats[4] - 10));
     }
 
     override public function update():Void {
@@ -50,7 +50,7 @@ class CarGun extends FlxSprite
     }
 
     private function shoot():Void {
-        if (FlxG.mouse.pressed)
+        if (Global.gMouseSet != -1)
             animation.play('shoot');
         else animation.play('idle');
     }
@@ -66,8 +66,8 @@ class CarGun extends FlxSprite
     private var _dx:Float;
     private var _dy:Float;
     private function aim():Void {
-        _dx = FlxG.mouse.x - x;
-        _dy = FlxG.mouse.y - y;
+        _dx = Global.gameMouse.x - x;
+        _dy = Global.gameMouse.x - y;
         angle = (Math.atan2(_dy, _dx) * 180 / Math.PI) + 180;
     }
 

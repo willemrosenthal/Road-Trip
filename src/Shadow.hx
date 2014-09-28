@@ -1,4 +1,5 @@
 package ;
+import flixel.util.FlxPoint;
 import flixel.FlxSprite;
 
 class Shadow extends FlxSprite
@@ -6,12 +7,14 @@ class Shadow extends FlxSprite
     var shadowParent:FlxSprite;
     var followPlayer:Bool = false;
 
-    public function new(Parent:FlxSprite, Image:String, FollowPlayer:Bool = false)
+    public function new(Parent:FlxSprite, Image:String, FollowPlayer:Bool = false, OffsetX:Float = 0, OffsetY:Float = 0)
     {
         shadowParent = Parent;
         followPlayer = FollowPlayer;
         super(shadowParent.x, shadowParent.y, Image);
         this.color = 0x000000;
+        offset.x = OffsetX;
+        offset.y = OffsetY;
     }
 
     override public function update():Void {

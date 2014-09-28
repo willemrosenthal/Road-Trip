@@ -1,5 +1,6 @@
 package;
 
+import flixel.FlxG;
 import flash.display.Sprite;
 import flash.display.StageAlign;
 import flash.display.StageScaleMode;
@@ -10,8 +11,8 @@ import flixel.FlxState;
 
 class Main extends Sprite 
 {
-	var gameWidth:Int = Math.ceil(640/3); // Width of the game in pixels (might be less / more in actual pixels depending on your zoom).
-	var gameHeight:Int = Math.ceil(1136/3); // Height of the game in pixels (might be less / more in actual pixels depending on your zoom).
+	var gameWidth:Int = Math.ceil(FlxG.stage.stageWidth/3); // Width of the game in pixels (might be less / more in actual pixels depending on your zoom).
+	var gameHeight:Int = Math.ceil(FlxG.stage.stageHeight/3); // Height of the game in pixels (might be less / more in actual pixels depending on your zoom).
 	var initialState:Class<FlxState> = PlayState; // The FlxState the game starts with.
 	var zoom:Float = 3; // If -1, zoom is automatically calculated to fit the window dimensions.
 	var framerate:Int = 60; // How many frames per second the game should run at.

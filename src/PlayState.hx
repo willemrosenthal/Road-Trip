@@ -64,7 +64,7 @@ class PlayState extends FlxState
         add(hud);
 
 
-        cars.add(new ComplexCar(100,200,'interceptor-yellow','wheel-1','supercharger-2','oil-1','','machine_cannon',-2));
+        cars.add(new ComplexCar(84,130,'interceptor-yellow','wheel-1','supercharger-2','oil-1','','machine_cannon',-2));
 
         e = new EnemyCar(100,FlxG.height + 100);
         GroupControl.addCar(e);
@@ -121,6 +121,26 @@ class PlayState extends FlxState
         Global.txt = txt;
         txt.setFormat(null, 8, FlxColor.WHITE, "center", FlxText.BORDER_NONE, FlxColor.BLACK);
         hud.add(txt);
+
+        var dash:FlxSprite = new FlxSprite(0, FlxG.height - 53,"assets/images/ui/dash.png");   //"assets/joystick_ring_big.png"
+        hud.add(dash);
+
+        var shiftPannel:FlxSprite = new FlxSprite(22, FlxG.height - 66,"assets/images/ui/shiftPannel.png");   //"assets/joystick_ring_big.png"
+        hud.add(shiftPannel);
+        var shiftPannelRt:FlxSprite = new FlxSprite(FlxG.width - 22 - 64, FlxG.height - 66,"assets/images/ui/shiftPannel_right.png");   //"assets/joystick_ring_big.png"
+        hud.add(shiftPannelRt);
+
+        var sab:Float = 40; //shifter area buffer
+        var shifter:VertShifter = new VertShifter(54,FlxG.height - 40.5, new FlxRect(shiftPannel.x - sab,shiftPannel.y - sab,shiftPannel.width + sab * 2,shiftPannel.height + sab * 2));
+        hud.add(shifter);
+
+        var shifter:HorShifter = new HorShifter(FlxG.width - 54,FlxG.height - 40.5, new FlxRect(shiftPannelRt.x - sab,shiftPannelRt.y - sab,shiftPannelRt.width + sab * 2,shiftPannelRt.height + sab * 2));
+        hud.add(shifter);
+
+        var endOfGameArea:Float = FlxG.stage.stageHeight/FlxG.camera.zoom * 0.8258;
+        var multiTouch:MultitouchField = new MultitouchField(new FlxRect(0,0,FlxG.width,endOfGameArea),new FlxRect(0,endOfGameArea,FlxG.width * 0.5,66),new FlxRect(FlxG.width * 0.5,endOfGameArea,FlxG.width * 0.5,66));
+        FlxG.stage.addChild(multiTouch);
+
         hud.setAll("scrollFactor", new FlxPoint(0, 0));
     }
 

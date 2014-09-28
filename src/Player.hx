@@ -29,13 +29,7 @@ class Player extends Car
         health = 100;
         swipeAttackDamage = 10;
 
-
         GroupControl.addShadow(new Shadow(this, Body));
-
-        #if ios
-			var data = Accelerometer.get();
-			zeroPoint = new FlxPoint(data.x,data.y);
-		#end
     }
 
     function preUpdate():Void {
@@ -56,56 +50,15 @@ class Player extends Car
                 ySpeed += xChange;
             if (FlxG.keys.pressed.UP)
                 ySpeed -= xChange;
-
-
-            #if ios
-                var data = Accelerometer.get();
-
-
-                if (data.x > zeroPoint.x + deadzoneX) {
-                    if (data.x - zeroPoint.x + deadzoneX < deadzoneX * 2)
-                        xSpeed += (data.x - zeroPoint.x + deadzoneX)/(deadzoneX * 2) * xChange
-                    else xSpeed += xChange;
-                    }
-                else if (data.x < zeroPoint.x - deadzoneX) {
-                    if (data.x > zeroPoint.x - deadzoneX * 2)
-                        xSpeed -= (data.x - (zeroPoint.x - deadzoneX * 2))/(deadzoneX * 2) * xChange
-                    else xSpeed -= xChange;
-                    }
-                else breakX();
-
-
-                if (data.y > zeroPoint.y + deadzoneY)  {
-                    if (data.y - zeroPoint.y + deadzoneY < deadzoneY * 2)
-                        ySpeed += (data.y - zeroPoint.y + deadzoneY)/(deadzoneY * 2) * yChange
-                    else ySpeed -= yChange;
-                    }
-
-                else if (data.y < zeroPoint.y - deadzoneY) {
-                    if (data.y > zeroPoint.y - deadzoneY * 2)
-                        ySpeed += (data.y - (zeroPoint.y - deadzoneY * 2))/(deadzoneY * 2) * yChange
-                    else ySpeed += yChange;
-                    }
-
-                else breakY();
-
-                Global.txt.text = Std.string(data.y) + " " + Std.string(zeroPoint.y);
-                //Global.txt.text = Std.string(Math.round(data.x * 10))
-
-
-//                if (data.x > 1)
-//                    Global.txt.text = "greater"; //Std.string(Math.round(data.x));
-//                if (data.x < 1)
-//                    Global.txt.text = "lesser"; //Std.string(Math.round(data.x));
-
-
-                if (FlxG.mouse.justPressed) {
-                    zeroPoint = new FlxPoint(data.x,data.y);
-                }
-
-            #end
-
         }
+
+        //shifter controls
+        ySpeed -= Global.playerSpeed.y * yChange;
+        xSpeed -= Global.playerSpeed.x * xChange;
+        if (Global.playerSpeed.y == 0)
+            ySpeed *= 0.97;
+        if (Global.playerSpeed.x == 0)
+            xSpeed *= 0.94;
 
         if (y < 0)
             y = 1;
