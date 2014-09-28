@@ -67,7 +67,7 @@ class CarGun extends FlxSprite
     private var _dy:Float;
     private function aim():Void {
         _dx = Global.gameMouse.x - x;
-        _dy = Global.gameMouse.x - y;
+        _dy = Global.gameMouse.y - y;
         angle = (Math.atan2(_dy, _dx) * 180 / Math.PI) + 180;
     }
 

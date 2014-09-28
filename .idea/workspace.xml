@@ -66,10 +66,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CarGun.hx" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="CarGun.hx" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CarGun.hx">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="0" selection-start="1591" selection-end="1591" vertical-scroll-proportion="-20.115385" vertical-offset="317" max-vertical-offset="1335">
+            <state line="66" column="26" selection-start="2008" selection-end="2008" vertical-scroll-proportion="0.6611002" vertical-offset="317" max-vertical-offset="1335">
               <folding />
             </state>
           </provider>
@@ -93,10 +93,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MultitouchField.hx" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MultitouchField.hx" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MultitouchField.hx">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="44" selection-start="1499" selection-end="1499" vertical-scroll-proportion="0.3821839" vertical-offset="411" max-vertical-offset="1800">
+            <state line="73" column="5" selection-start="2466" selection-end="2466" vertical-scroll-proportion="0.0" vertical-offset="651" max-vertical-offset="1800">
               <folding />
             </state>
           </provider>
@@ -192,8 +192,8 @@
         <option value="$PROJECT_DIR$/src/Main.hx" />
         <option value="$PROJECT_DIR$/src/VertShifter.hx" />
         <option value="$PROJECT_DIR$/src/HorShifter.hx" />
-        <option value="$PROJECT_DIR$/src/CarGun.hx" />
         <option value="$PROJECT_DIR$/src/MultitouchField.hx" />
+        <option value="$PROJECT_DIR$/src/CarGun.hx" />
       </list>
     </option>
   </component>
@@ -863,16 +863,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CarGun.hx">
+    <entry file="file://$PROJECT_DIR$/src/MultitouchField.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="0" selection-start="1591" selection-end="1591" vertical-scroll-proportion="-20.115385" vertical-offset="317" max-vertical-offset="1335">
+        <state line="73" column="5" selection-start="2466" selection-end="2466" vertical-scroll-proportion="0.0" vertical-offset="651" max-vertical-offset="1800">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MultitouchField.hx">
+    <entry file="file://$PROJECT_DIR$/src/CarGun.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="44" selection-start="1499" selection-end="1499" vertical-scroll-proportion="0.3821839" vertical-offset="411" max-vertical-offset="1800">
+        <state line="66" column="26" selection-start="2008" selection-end="2008" vertical-scroll-proportion="0.6611002" vertical-offset="317" max-vertical-offset="1335">
           <folding />
         </state>
       </provider>
