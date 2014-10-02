@@ -23,7 +23,6 @@ class Parallax extends FlxGroup
     private var totalTall:Int;
     private var pieces:Array<FlxSprite>;
 
-
 	public function new(X:Float, Y:Float, Images:Array<String>, Width:Int, Height:Int, Vert:Bool = true, Centered:Bool = false)
 	{
 		super();

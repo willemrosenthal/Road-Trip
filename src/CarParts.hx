@@ -10,7 +10,7 @@ class CarParts {
     // world
 	static public var guns:Array<Dynamic> = [
     ['machine_cannon2', 40,11,-5.5,0,1,'bullet',12,80],
-    ['machine_cannon', 46,11,-8,0,12,'bullet',12,80],
+    ['machine_cannon', 46,11,-8,0,12,'bullet',12 * 2,80],
     ['machine_cannon3', 40,11,-5.5,0,1,'bullet',12,80]
     ];
     //['gun name', width, height, x-offset, y-offset, fps, 'bullet name', rate-of-fire, damage]

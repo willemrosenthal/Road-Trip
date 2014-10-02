@@ -20,6 +20,7 @@ class Global {
 
     // groups
     static public var cars:FlxGroup;
+    static public var effects:FlxGroup;
     static public var shadows:FlxGroup;
     static public var numbers:FlxGroup;
 

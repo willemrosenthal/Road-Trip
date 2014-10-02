@@ -13,6 +13,8 @@ class CarGun extends FlxSprite
     public var shake:Float = 0.25;
     public var gunStats:Array<Dynamic>;
 
+    private var shootTimer:Int = 0;
+
     public function new(X:Float, Y:Float, Leader:Player, GunId:String)
     {
         super(X, Y);
@@ -35,7 +37,7 @@ class CarGun extends FlxSprite
         leaderOffset.y = y - leader.y + gunStats[4];
         centeredOnCar();
 
-        GroupControl.addShadow(new Shadow(this, 'assets/images/car/gun/' + gunStats[0] + '_shadow.png', false, gunStats[3], gunStats[4] - 10));
+        //GroupControl.addShadow(new Shadow(this, 'assets/images/car/gun/' + gunStats[0] + '_shadow.png', false, gunStats[3], gunStats[4] - 10));
     }
 
     override public function update():Void {
@@ -53,6 +55,17 @@ class CarGun extends FlxSprite
         if (Global.gMouseSet != -1)
             animation.play('shoot');
         else animation.play('idle');
+
+        if (shootTimer > 0)
+            shootTimer --;
+
+        if (Global.gMouseSet != -1) {
+            if (shootTimer == 0) {
+                Global.effects.add(new GunExplosion(FlxG.mouse.x,FlxG.mouse.y));
+                shootTimer = gunStats[7];
+            }
+        }
+
     }
 
     private function rotateWithCar():Void {

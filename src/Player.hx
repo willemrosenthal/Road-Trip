@@ -62,8 +62,8 @@ class Player extends Car
 
         if (y < 0)
             y = 1;
-        if (y > FlxG.height)
-            y = FlxG.height - 1;
+        if (y > FlxG.height - 85)
+            y = FlxG.height - 86;
 
 
         if (x < FlxG.worldBounds.x)
