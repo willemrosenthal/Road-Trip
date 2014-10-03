@@ -50,6 +50,10 @@ class MultitouchField extends Sprite
         mouse.x = e.stageX / FlxG.camera.zoom;
         mouse.y = e.stageY / FlxG.camera.zoom;
 
+        // if touchpoint already used, don't bother
+        if (e.touchPointID == Global.gMouseSet || e.touchPointID == Global.hMouseSet || e.touchPointID == Global.vMouseSet)
+            return;
+
         // left slider
         if (mouse.x > vbarZone.x && mouse.x < vbarZone.width + vbarZone.x && mouse.y > vbarZone.y && mouse.y < vbarZone.height + vbarZone.y && Global.vMouseSet == -1) {
             Global.vMouseSet = e.touchPointID;

@@ -1,24 +1,37 @@
 package ;
-import flixel.FlxCamera;
-import flixel.text.FlxText;
-import flixel.FlxG;
-import flixel.util.FlxPoint;
-import flixel.group.FlxGroup;
 
 class CarParts {
 
-    // world
 	static public var guns:Array<Dynamic> = [
-    ['machine_cannon2', 40,11,-5.5,0,1,'bullet',12,80],
-    ['machine_cannon', 46,11,-8,0,12,'bullet',12 * 2,80],
-    ['machine_cannon3', 40,11,-5.5,0,1,'bullet',12,80]
+    ['chaingun', 52, 13, -11, 0, 12,[0,1],'gunshot1',5,5],
+    ['machine_cannon', 46, 11, -8, 0, 12,[0,1,2,2,2],'explosion1',12 * 2,80],
+    ['super_bowgun', 61, 26, -15, 0, 12,[0,1,2,2,2,2,2],'bigshot1',12 * 3,80]
     ];
-    //['gun name', width, height, x-offset, y-offset, fps, 'bullet name', rate-of-fire, damage]
+    //['gun name', width, height, x-offset, y-offset, fps, shootAnimationArray, 'bullet name', rate-of-fire, damage]
+
+
+    static public var bullets:Array<Dynamic> = [
+    ['gunshot1', 21, 21, [0,1,2,3],15,20],
+    ['explosion1', 34, 28, [0,1,2,3],10,0],
+    ['bigshot1', 51, 51, [0,1,2,3],15,1]
+    ];
+    //['shot name', width, height, animation_array, fps, random_placement_range]
+
+
+
 
     static public function getGun(GunId:String):Array<Dynamic> {
         for (i in 0...guns.length) {
             if (guns[i][0] == GunId)
                 return guns[i];
+        }
+        return [];
+    }
+
+    static public function getBullet(BulletId:String):Array<Dynamic> {
+        for (i in 0...bullets.length) {
+            if (bullets[i][0] == BulletId)
+                return bullets[i];
         }
         return [];
     }

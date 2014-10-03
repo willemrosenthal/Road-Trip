@@ -21,11 +21,11 @@ class CarGun extends FlxSprite
         solid = false;
         leader = Leader;
 
-        //['gun name', width, height, x-offset, y-offset, fps, 'bullet name', rate-of-fire, damage]
+        //['gun name', width, height, x-offset, y-offset, fps, shoot frames,'bullet name', rate-of-fire, damage]
         gunStats = CarParts.getGun(GunId);
 
         loadGraphic('assets/images/car/gun/' + gunStats[0] + '.png', true, gunStats[1],gunStats[2]);
-        animation.add('shoot', [0,1,2,2,2],gunStats[5]);
+        animation.add('shoot', gunStats[6],gunStats[5],false);
         animation.add('idle', [2]);
 
         animation.play('idle');
@@ -54,15 +54,16 @@ class CarGun extends FlxSprite
     private function shoot():Void {
         if (Global.gMouseSet != -1)
             animation.play('shoot');
-        else animation.play('idle');
+        else if (animation.finished)
+            animation.play('idle');
 
         if (shootTimer > 0)
             shootTimer --;
 
         if (Global.gMouseSet != -1) {
             if (shootTimer == 0) {
-                Global.effects.add(new GunExplosion(FlxG.mouse.x,FlxG.mouse.y));
-                shootTimer = gunStats[7];
+                Global.effects.add(new BulletShot(Global.gameMouse.x,Global.gameMouse.y,CarParts.getBullet(gunStats[7]),gunStats[9]));
+                shootTimer = gunStats[8];
             }
         }
 
